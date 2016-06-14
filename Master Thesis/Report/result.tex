@@ -1,0 +1,22 @@
+\chapter{Result and Discussion} \label{result}
+
+as we can see, the algorithm was able to finish a 
+
+
+
+\section{Performance}
+As we can see, the hardware implementation is better then the C-simulated implementation, even at this low scale, we can see that the
+
+
+\section{Discussion}
+\subsection*{Analysis of the performance}
+! 
+\subsection*{problem that was encountered}
+One problem that was encountered during this project was that the output signal from the synthesiser was not the correct direction. The output signal was often set as input signal. The HLS would automatically set the values as output signal or input signal.The reurn value from a funciton would be set as a the output signal, while the variable that the function takes, would be set as the input signal. Another way wo specify that something is the output signal would be to explicitly set them as pointer arguments. This will in set the signal to be output signal.
+
+Another problem that I often encountered, was that the Vivado HLS often stop working. The problem was fixed by creating a new project and include the previous files.
+
+Another problem, was that some times the Vivado HLS was not able to Cosimulate the implementation the first time. I was not able to find a solution to this problem except resynthesis the project. 
+
+There were incidence where the implementation on the Zedboard did not behave as the implementation. This was solved by reprogramming the device and sometimes, restarting the Zedboard.
+

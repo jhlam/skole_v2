@@ -1,0 +1,81 @@
+\documentclass[a4paper]{book}
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{graphicx}
+\usepackage[numbers,sort]{natbib}
+\usepackage{array}
+\usepackage{amssymb}
+\usepackage{tabularx}
+\usepackage{wrapfig}
+\usepackage{subcaption}
+\usepackage[numbers,sort]{natbib}
+\usepackage{geometry} 	
+\let\oldemptyset\emptyset
+\let\emptyset\varnothing
+
+\graphicspath{ {Figures/}}
+
+\usepackage{listings}
+\usepackage{xcolor}
+\lstdefinestyle{customc}{
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+  frame=L,
+  xleftmargin=\parindent,
+  language=C,
+  showstringspaces=false,
+  basicstyle=\footnotesize\ttfamily,
+  keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\itshape\color{purple!40!black},
+  identifierstyle=\color{blue},
+  stringstyle=\color{orange},
+}
+
+\lstdefinestyle{customasm}{
+  belowcaptionskip=1\baselineskip,
+  frame=L,
+  xleftmargin=\parindent,
+  language=[x86masm]Assembler,
+  basicstyle=\footnotesize\ttfamily,
+  commentstyle=\itshape\color{purple!40!black},
+}
+
+
+\lstset{escapechar=@,style=customc}
+
+\geometry{b5paper}
+
+
+%\usepackage{todonotes}
+% Title Page
+\title{SPECCY - check it out}
+\author{Julian Ho-yin Lam}
+
+
+\begin{document}
+%\maketitle
+\include{front}
+\setcounter{page}{0}
+\pagenumbering{roman}
+\include{abstract}
+\include{sammendrag}
+\include{assignment}
+\tableofcontents
+\listoffigures
+\listoftables
+\setcounter{page}{0}
+\pagenumbering{arabic}
+\include{introduction}
+\include{background}
+\include{related_work}
+\include{method}
+\include{result}
+\include{future_work}
+\include{conclusion}
+\bibliographystyle{unsrt}
+\bibliography{my_references}
+%\bibliography{website_references.bib}
+
+
+\end{document}     

@@ -1,0 +1,15 @@
+\chapter{Discussion} \label{discussion}
+
+\section{ problem that was encountered}
+One problemt that I encoutered during this project was that the output signal from the synthesiser was not in the correct direction. The output signal was often set as input signal. The HLS would automaticlly set the values as output signal or input signal.The reurn value from a funciton would be set as a the output signal, while the variable that the function takes, would be set as the input signal. Another way wo specify that something is the output signal would be to explicitly set them as pointer arguments. This will in set the signal to be output signal.
+
+\section{AXI4}
+To use a standard protocol to transport data, Xilinx have created what is known as AXI4, there are different standards to implement, axi4 lite, stream, master, etc: each have a different usage and standards. The axi4 lite is more suitable for smaller and easier IP-core[need to explain what IP core is]
+
+
+2.0000e+09	2000	500	222.2222	125	80	55.5556	40.8163	31.2500	24.6914
+
+2000000000.00000, 2000, 500, 22.222222222222, 125, 80, 55.5555555556,40.8163265306122,31.2500000000000, 24.6913580246914
+
+\section{implementaion}
+The vivado implementation on the Zedboard was problemtatic.

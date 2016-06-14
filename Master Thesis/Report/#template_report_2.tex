@@ -1,0 +1,48 @@
+\documentclass[]{book}
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{graphicx}
+\usepackage[numbers,sort]{natbib}
+\usepackage{array}
+\usepackage{amssymb}
+\usepackage{tabularx}
+\usepackage{wrapfig}
+\usepackage{subcaption}
+\graphicspath{ {Figures/}}
+%\use	package{todonotes}
+% Title Page
+\title{Optimization of Seed Selection for Information Diffusion With High Level Synthesis}
+\author{Julian Ho-yin Lam}
+
+\let\oldemptyset\emptyset
+\let\emtyset\varnothing
+
+\begin{document}
+%\maketitle
+\include{front}
+\setcounter{page}{0}
+\pagenumbering{roman}
+\include{assignment}
+
+\include{abstract}
+
+\tableofcontents
+\listoffigures
+\listoftables
+\setcounter{page}{0}
+\pagenumbering{arabic}
+\include{introduction}
+\include{background_2}
+\include{related_work}
+\include{method}
+\include{result}
+\include{discussion}
+\include{future_work}
+\include{conclusion}	
+
+\bibliographystyle{unsrt}
+\bibliography{my_references}
+
+
+\end{document}

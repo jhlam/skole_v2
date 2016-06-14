@@ -1,0 +1,33 @@
+\chapter{Future work} \label{futureWork}
+Information diffusion and seed selection in general computes gigantic graphs, and thus is very time consuming. There is therefore several performance related improvements that have yet to be explored.
+
+\begin{enumerate}
+\item \textbf{Different architecture} for this implementation, we used a core including the LFSR, it would be interesting to explore different architecture. One solution that we did not have the chance to explore, is implement a large buffer connected to a single LFSR that continuously generates random number. The implemented cores would then each pop one random number for each cointoss. This solution requires a large buffer and would potentially generate large overhead with reading from the buffer. A large enough buffer  would also be required since there are in worst case scenario for a single SpMV run, we would need $n^2$ cointoss. The potentially benefits of such a design would be better space utilization. A smaller core would use less resource of the Zedboard. This can result in more parallelization.
+
+\item \textbf{Use larger graph} In graph theory, graph used is often at scale(26-42). The smallest mentioned graph from Graph500, is $2^26$, a toy graph. Our graph is not even close to such a large graph.
+
+\item \textbf{Customize algorithm} As mentioned in Chapter \ref{relatedWork}, HLS can generate a close to hand written design if the algorithm is customized for HLS. A interesting potential improvement would be to analyse algorithm and explore different solutions and implementation.
+
+\item \textbf{Compare different solutions} In this report, we have only showed the result from one architecture, it would be interesting to compare different shcems
+
+\item \textbf{Memory Optimization}. For this algorithm, we store the entire adacency matrix. This is inefficient for a sparse matrix. An potentially improvement would be to explore a different storage format for the adjacency matrix.
+
+\item \textbf{Try different seed selection algorithm}
+\end{enumerate}
+
+
+The community of the HLS is very active and frequently responds to forum post seeking help.	Not many work that uses HLS[CITATION NEEDED]. Recently was free, used to cost money.
+
+
+Learn more about HLS so it can be better utilized. 
+different scheme to further work:
+- implement parallel
+- different scheeme, rng on the outside
+- Use other data structure.
+- larger graph
+- compare this solution to other solution, 
+- implement more efficient memory storage
+- use other storage method since its sparse. 
+- would be interesting to gather information on  energy consumption.
+- Implement a more general architecture to handle more total nodes.
+- If  there would be enough memory on the board, would be interesting to run 50 times on the board and just return the avrage time and coverage

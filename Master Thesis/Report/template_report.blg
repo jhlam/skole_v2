@@ -1,0 +1,32 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: template_report.aux
+A level-1 auxiliary file: front.aux
+A level-1 auxiliary file: abstract.aux
+A level-1 auxiliary file: sammendrag.aux
+A level-1 auxiliary file: assignment.aux
+A level-1 auxiliary file: introduction.aux
+A level-1 auxiliary file: background.aux
+A level-1 auxiliary file: related_work.aux
+A level-1 auxiliary file: method.aux
+A level-1 auxiliary file: result.aux
+A level-1 auxiliary file: future_work.aux
+A level-1 auxiliary file: conclusion.aux
+The style file: unsrt.bst
+Database file #1: my_references.bib
+Warning--I'm ignoring MaximizeSpread2003's extra "author" field
+--line 18 of file my_references.bib
+Warning--entry type for "VIVADOHLS" isn't style-file defined
+--line 640 of file my_references.bib
+Warning--entry type for "FPGASoCManual" isn't style-file defined
+--line 747 of file my_references.bib
+Warning--entry type for "PYTHON" isn't style-file defined
+--line 754 of file my_references.bib
+Warning--entry type for "graph500" isn't style-file defined
+--line 762 of file my_references.bib
+Warning--entry type for "FPGAOVERVIEW" isn't style-file defined
+--line 778 of file my_references.bib
+Warning--empty journal in greedyInfluenc2005
+Warning--empty journal in HybridBFS2015
+Warning--empty journal in MaximizeSpread2003
+Warning--empty journal in ViralMarketing
+Warning--empty journal in Rmat2004
+(There were 11 warnings)
