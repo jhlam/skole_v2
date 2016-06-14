@@ -5,22 +5,20 @@
 \contentsline {chapter}{\numberline {2}Background}{7}
 \contentsline {section}{\numberline {2.1}Information Diffusion}{7}
 \contentsline {section}{\numberline {2.2}Basic Diffusion Models}{8}
-\contentsline {section}{\numberline {2.3}Linear Threshold Model}{8}
-\contentsline {subsection}{\numberline {2.3.1}Independent Cascade Model}{8}
-\contentsline {section}{\numberline {2.4}Breadth First Search}{10}
-\contentsline {subsection}{\numberline {2.4.1}BFS to Data Diffusion}{10}
-\contentsline {section}{\numberline {2.5}Matrix Notations}{11}
-\contentsline {subsection}{\numberline {2.5.1}Sparse Matrix}{11}
-\contentsline {subsection}{\numberline {2.5.2}Breadth First Search as Matrix Multiplication.}{12}
-\contentsline {subsection}{\numberline {2.5.3}Semiring}{12}
-\contentsline {section}{\numberline {2.6}Seed Selection Algorithm}{12}
-\contentsline {subsection}{\numberline {2.6.1}The Greedy Algorithm}{13}
-\contentsline {subsection}{\numberline {2.6.2}The Degree Algorithm}{13}
-\contentsline {subsection}{\numberline {2.6.3}Independent Algorithm}{14}
-\contentsline {subsection}{\numberline {2.6.4}Random Algorithm}{14}
-\contentsline {section}{\numberline {2.7}High Level Synthesis}{15}
-\contentsline {section}{\numberline {2.8}ZedBoard}{15}
-\contentsline {section}{\numberline {2.9}RMat}{15}
+\contentsline {section}{\numberline {2.3}Breadth First Search}{9}
+\contentsline {subsection}{\numberline {2.3.1}BFS to Data Diffusion}{9}
+\contentsline {section}{\numberline {2.4}Matrix Notations}{10}
+\contentsline {subsection}{\numberline {2.4.1}Sparse Matrix}{10}
+\contentsline {subsection}{\numberline {2.4.2}Breadth First Search as Matrix Multiplication.}{11}
+\contentsline {subsection}{\numberline {2.4.3}Semiring}{11}
+\contentsline {section}{\numberline {2.5}Seed Selection Algorithm}{11}
+\contentsline {subsection}{\numberline {2.5.1}The Greedy Algorithm}{12}
+\contentsline {subsection}{\numberline {2.5.2}The Degree Algorithm}{13}
+\contentsline {subsection}{\numberline {2.5.3}Independent Algorithm}{13}
+\contentsline {subsection}{\numberline {2.5.4}Random Algorithm}{14}
+\contentsline {section}{\numberline {2.6}High Level Synthesis}{14}
+\contentsline {section}{\numberline {2.7}ZedBoard}{14}
+\contentsline {section}{\numberline {2.8}RMat}{15}
 \contentsline {chapter}{\numberline {3}Related Work}{17}
 \contentsline {section}{\numberline {3.1}Information Diffusion}{17}
 \contentsline {section}{\numberline {3.2}High Level Synthesis}{18}

@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{Rmat2004}
+Deepayan Chakrabarti, Yiping Zhan, and Christos Faloutsos.
+\newblock R-mat: A recursive model for graph mining.
+\newblock 4:442--446, 2004.
+
 \bibitem{InformationDiffusionThroughBlogspace}
 Daniel Gruhl, R.~Guha, David Liben-Nowell, and Andrew Tomkins.
 \newblock Information diffusion through blogspace.
@@ -102,11 +107,6 @@ XIlinx.
 \bibitem{FPGAOVERVIEW}
 Xilinx.
 \newblock {Zynq-7000 All Programmable SoC Overview}, 2014.
-
-\bibitem{Rmat2004}
-Deepayan Chakrabarti, Yiping Zhan, and Christos Faloutsos.
-\newblock R-mat: A recursive model for graph mining.
-\newblock 4:442--446, 2004.
 
 \bibitem{Starbird:2012:RRI:2145204.2145212}
 Kate Starbird and Leysia Palen.

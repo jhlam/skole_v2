@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.12)  14 JUN 2016 11:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.12)  14 JUN 2016 16:51
 entering extended mode
 **./template_report.tex
 (template_report.tex
@@ -560,13 +560,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--7
  []
 
 
-Overfull \hbox (14.48175pt too wide) in paragraph at lines 11--12
+Overfull \hbox (14.48175pt too wide) in paragraph at lines 10--11
 \OT1/cmr/m/n/10 work. A ver-tex can be ei-ther ac-ti-vated(infected) or in-ac-t
 i-vated(healthy/noninfected),
  []
 
 
-Overfull \hbox (0.62172pt too wide) in paragraph at lines 11--12
+Overfull \hbox (0.62172pt too wide) in paragraph at lines 10--11
 \OT1/cmr/m/n/10 each node can spread the con-ta-gion(activation,infection) to t
 heir neigh-bour. Some
  []
@@ -575,112 +575,109 @@ heir neigh-bour. Some
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
+<Figures/ICM_step1.png, id=58, 419.5675pt x 404.51125pt>
+File: Figures/ICM_step1.png Graphic file (type png)
 
-Package caption Warning: \label without proper reference on input line 29.
+<use Figures/ICM_step1.png>
+Package pdftex.def Info: Figures/ICM_step1.png used on input line 23.
+(pdftex.def)             Requested size: 105.16199pt x 101.3868pt.
+
+<Figures/ICM_step2.png, id=60, 419.5675pt x 404.51125pt>
+File: Figures/ICM_step2.png Graphic file (type png)
+
+<use Figures/ICM_step2.png>
+Package pdftex.def Info: Figures/ICM_step2.png used on input line 28.
+(pdftex.def)             Requested size: 105.16199pt x 101.3868pt.
+
+<Figures/ICM_step3.png, id=61, 419.5675pt x 404.51125pt>
+File: Figures/ICM_step3.png Graphic file (type png)
+
+<use Figures/ICM_step3.png>
+Package pdftex.def Info: Figures/ICM_step3.png used on input line 33.
+(pdftex.def)             Requested size: 105.16199pt x 101.3868pt.
+
+
+Package caption Warning: \label without proper reference on input line 46.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:LTM' on page 8 undefined on input line 24.
+LaTeX Warning: Reference `fig:LTM' on page 8 undefined on input line 42.
 
-<Figures/linearThreshold.png, id=58, 345.54094pt x 225.84375pt>
-File: Figures/linearThreshold.png Graphic file (type png)
+<Figures/LTM_step1.png, id=62, 419.5675pt x 404.51125pt>
+File: Figures/LTM_step1.png Graphic file (type png)
 
-<use Figures/linearThreshold.png>
-Package pdftex.def Info: Figures/linearThreshold.png used on input line 31.
-(pdftex.def)             Requested size: 105.16199pt x 68.73233pt.
+<use Figures/LTM_step1.png>
+Package pdftex.def Info: Figures/LTM_step1.png used on input line 48.
+(pdftex.def)             Requested size: 105.16199pt x 101.3868pt.
 
-<Figures/linearThreshold2.png, id=60, 337.26pt x 228.10219pt>
-File: Figures/linearThreshold2.png Graphic file (type png)
+<Figures/LTM_step2.png, id=63, 419.5675pt x 404.51125pt>
+File: Figures/LTM_step2.png Graphic file (type png)
 
-<use Figures/linearThreshold2.png>
-Package pdftex.def Info: Figures/linearThreshold2.png used on input line 36.
-(pdftex.def)             Requested size: 105.16199pt x 71.12512pt.
-
-<Figures/linearThreshold3.png, id=61, 295.85532pt x 237.88875pt>
-File: Figures/linearThreshold3.png Graphic file (type png)
-
-<use Figures/linearThreshold3.png>
-Package pdftex.def Info: Figures/linearThreshold3.png used on input line 41.
-(pdftex.def)             Requested size: 105.16199pt x 84.55817pt.
- [8]
-<Figures/ICM.png, id=65, 295.85532pt x 210.7875pt>
-File: Figures/ICM.png Graphic file (type png)
- <use Figures/ICM.png>
-Package pdftex.def Info: Figures/ICM.png used on input line 56.
-(pdftex.def)             Requested size: 105.16199pt x 74.92496pt.
-
-<Figures/ICM2.png, id=66, 303.38344pt x 218.31563pt>
-File: Figures/ICM2.png Graphic file (type png)
- <use Figures/ICM2.png>
-Package pdftex.def Info: Figures/ICM2.png used on input line 61.
-(pdftex.def)             Requested size: 105.16199pt x 75.6754pt.
-
-<Figures/ICM3.png, id=67, 301.125pt x 234.1247pt>
-File: Figures/ICM3.png Graphic file (type png)
- <use Figures/ICM3.png>
-Package pdftex.def Info: Figures/ICM3.png used on input line 66.
-(pdftex.def)             Requested size: 105.16199pt x 81.76266pt.
-
-[9 <./Figures/linearThreshold.png> <./Figures/linearThreshold2.png> <./Figures/
-linearThreshold3.png> <./Figures/ICM.png> <./Figures/ICM2.png> <./Figures/ICM3.
-png>]
+<use Figures/LTM_step2.png>
+Package pdftex.def Info: Figures/LTM_step2.png used on input line 53.
+(pdftex.def)             Requested size: 105.16199pt x 101.3868pt.
+File: Figures/LTM_step2.png Graphic file (type png)
+ <use Figures/LTM_step2.png>
+Package pdftex.def Info: Figures/LTM_step2.png used on input line 58.
+(pdftex.def)             Requested size: 105.16199pt x 101.3868pt.
+ [8 <./Figures/ICM_step1.png> <./Figures/ICM_step2.png> <./Figures/ICM_step3.pn
+g>] [9 <./Figures/LTM_step1.png> <./Figures/LTM_step2.png>]
 
 LaTeX Warning: Reference `fig:AdjaToMatrix' on page 10 undefined on input line 
-117.
+109.
 
-[10] <Figures/AdjacencyM.png, id=79, 132.495pt x 131.74219pt>
-File: Figures/AdjacencyM.png Graphic file (type png)
+<Figures/AdjacencyMatrix.png, id=76, 164.615pt x 164.615pt>
+File: Figures/AdjacencyMatrix.png Graphic file (type png)
 
-<use Figures/AdjacencyM.png>
-Package pdftex.def Info: Figures/AdjacencyM.png used on input line 124.
-(pdftex.def)             Requested size: 175.2682pt x 174.28415pt.
+<use Figures/AdjacencyMatrix.png>
+Package pdftex.def Info: Figures/AdjacencyMatrix.png used on input line 116.
+(pdftex.def)             Requested size: 175.2682pt x 175.27223pt.
 
-<Figures/simpleGraph.png, id=80, 259.7203pt x 191.9672pt>
+<Figures/simpleGraph.png, id=77, 404.51125pt x 334.24875pt>
 File: Figures/simpleGraph.png Graphic file (type png)
 
 <use Figures/simpleGraph.png>
-Package pdftex.def Info: Figures/simpleGraph.png used on input line 129.
-(pdftex.def)             Requested size: 175.2682pt x 129.5459pt.
+Package pdftex.def Info: Figures/simpleGraph.png used on input line 121.
+(pdftex.def)             Requested size: 175.2682pt x 144.8258pt.
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 123--133
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 115--125
 []$[]$ $[]$ 
  []
 
-[11 <./Figures/AdjacencyM.png> <./Figures/simpleGraph.png>]
-<Figures/BFS_algo.png, id=84, 380.17032pt x 221.32687pt>
+[10] <Figures/BFS_algo.png, id=83, 380.17032pt x 221.32687pt>
 File: Figures/BFS_algo.png Graphic file (type png)
 
 <use Figures/BFS_algo.png>
-Package pdftex.def Info: Figures/BFS_algo.png used on input line 141.
+Package pdftex.def Info: Figures/BFS_algo.png used on input line 133.
 (pdftex.def)             Requested size: 350.5364pt x 204.07909pt.
- [12 <./Figures/BFS_algo.png>]
+ [11 <./Figures/AdjacencyMatrix.png> <./Figures/simpleGraph.png>] [12 <./Figure
+s/BFS_algo.png>]
 Missing character: There is no â in font cmr10!
 Missing character: There is no ˆ in font cmr10!
 Missing character: There is no ’ in font cmr10!
 
 
-LaTeX Warning: Reference `degreeCorr' on page 13 undefined on input line 172.
+LaTeX Warning: Reference `degreeCorr' on page 13 undefined on input line 164.
 
+Missing character: There is no â in font cmr10!
+Missing character: There is no ˆ in font cmr10!
+Missing character: There is no ’ in font cmr10!
 [13]
-Missing character: There is no â in font cmr10!
-Missing character: There is no ˆ in font cmr10!
-Missing character: There is no ’ in font cmr10!
- [14]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 220.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 212.
 
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 220.
-
-[15] <Figures/flip_matrix.png, id=98, 294.34969pt x 165.61874pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 212.
+ [14]
+<Figures/flip_matrix.png, id=99, 294.34969pt x 165.61874pt>
 File: Figures/flip_matrix.png Graphic file (type png)
 
 <use Figures/flip_matrix.png>
-Package pdftex.def Info: Figures/flip_matrix.png used on input line 238.
+Package pdftex.def Info: Figures/flip_matrix.png used on input line 230.
 (pdftex.def)             Requested size: 294.34895pt x 165.61833pt.
-) [16 <./Figures/flip_matrix.png>]
+) [15] [16 <./Figures/flip_matrix.png>]
 \openout2 = `related_work.aux'.
 
 
@@ -709,7 +706,7 @@ Missing character: There is no “ in font cmr10!
 
 ]
 Chapter 4.
-[23] [24] <Figures/placeholder.png, id=128, 1399.47844pt x 813.0375pt>
+[23] [24] <Figures/placeholder.png, id=132, 1399.47844pt x 813.0375pt>
 File: Figures/placeholder.png Graphic file (type png)
 
 <use Figures/placeholder.png>
@@ -721,7 +718,7 @@ Overfull \hbox (69.31036pt too wide) in paragraph at lines 36--37
  []
 
 [25 <./Figures/placeholder.png>] [26]
-<Figures/Rmat.png, id=135, 246.1697pt x 213.79875pt>
+<Figures/Rmat.png, id=139, 246.1697pt x 213.79875pt>
 File: Figures/Rmat.png Graphic file (type png)
  <use Figures/Rmat.png>
 Package pdftex.def Info: Figures/Rmat.png used on input line 83.
@@ -761,7 +758,7 @@ Chapter 7.
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ‰ in font cmr10!
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 46.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 51.
  [37] [38]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no “ in font cmr10!
@@ -784,13 +781,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 7128 strings out of 493335
- 104314 string characters out of 3136680
+ 7123 strings out of 493335
+ 104203 string characters out of 3136680
  197322 words of memory out of 3000000
- 10452 multiletter control sequences out of 15000+200000
+ 10448 multiletter control sequences out of 15000+200000
  10423 words of font info for 38 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,8n,56p,1736b,456s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,8n,56p,1736b,450s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C
@@ -805,9 +802,9 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files (x86)/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on template_report.pdf (47 pages, 367200 bytes).
+Output written on template_report.pdf (47 pages, 404531 bytes).
 PDF statistics:
- 226 PDF objects out of 1000 (max. 8388607)
+ 230 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
