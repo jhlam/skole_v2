@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.12)  14 JUN 2016 16:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.12)  14 JUN 2016 18:26
 entering extended mode
 **./template_report.tex
 (template_report.tex
@@ -644,18 +644,17 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 115--125
 []$[]$ $[]$ 
  []
 
-[10] <Figures/BFS_algo.png, id=83, 380.17032pt x 221.32687pt>
+[10] <Figures/BFS_algo.png, id=83, 529.98pt x 275.0275pt>
 File: Figures/BFS_algo.png Graphic file (type png)
 
 <use Figures/BFS_algo.png>
 Package pdftex.def Info: Figures/BFS_algo.png used on input line 133.
-(pdftex.def)             Requested size: 350.5364pt x 204.07909pt.
- [11 <./Figures/AdjacencyMatrix.png> <./Figures/simpleGraph.png>] [12 <./Figure
-s/BFS_algo.png>]
+(pdftex.def)             Requested size: 350.5364pt x 181.90898pt.
+ [11 <./Figures/AdjacencyMatrix.png> <./Figures/simpleGraph.png>]
 Missing character: There is no â in font cmr10!
 Missing character: There is no ˆ in font cmr10!
 Missing character: There is no ’ in font cmr10!
-
+ [12 <./Figures/BFS_algo.png>]
 
 LaTeX Warning: Reference `degreeCorr' on page 13 undefined on input line 164.
 
@@ -663,20 +662,20 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no ˆ in font cmr10!
 Missing character: There is no ’ in font cmr10!
 [13]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 212.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 211.
 
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 212.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 211.
  [14]
-<Figures/flip_matrix.png, id=99, 294.34969pt x 165.61874pt>
+<Figures/flip_matrix.png, id=100, 464.73625pt x 163.61125pt>
 File: Figures/flip_matrix.png Graphic file (type png)
 
 <use Figures/flip_matrix.png>
-Package pdftex.def Info: Figures/flip_matrix.png used on input line 230.
-(pdftex.def)             Requested size: 294.34895pt x 165.61833pt.
+Package pdftex.def Info: Figures/flip_matrix.png used on input line 223.
+(pdftex.def)             Requested size: 278.84389pt x 98.1675pt.
 ) [15] [16 <./Figures/flip_matrix.png>]
 \openout2 = `related_work.aux'.
 
@@ -706,7 +705,7 @@ Missing character: There is no “ in font cmr10!
 
 ]
 Chapter 4.
-[23] [24] <Figures/placeholder.png, id=132, 1399.47844pt x 813.0375pt>
+[23] [24] <Figures/placeholder.png, id=134, 1399.47844pt x 813.0375pt>
 File: Figures/placeholder.png Graphic file (type png)
 
 <use Figures/placeholder.png>
@@ -718,7 +717,7 @@ Overfull \hbox (69.31036pt too wide) in paragraph at lines 36--37
  []
 
 [25 <./Figures/placeholder.png>] [26]
-<Figures/Rmat.png, id=139, 246.1697pt x 213.79875pt>
+<Figures/Rmat.png, id=141, 246.1697pt x 213.79875pt>
 File: Figures/Rmat.png Graphic file (type png)
  <use Figures/Rmat.png>
 Package pdftex.def Info: Figures/Rmat.png used on input line 83.
@@ -781,10 +780,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 7123 strings out of 493335
- 104203 string characters out of 3136680
+ 7126 strings out of 493335
+ 104314 string characters out of 3136680
  197322 words of memory out of 3000000
- 10448 multiletter control sequences out of 15000+200000
+ 10451 multiletter control sequences out of 15000+200000
  10423 words of font info for 38 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,8n,56p,1736b,450s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -802,9 +801,9 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files (x86)/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on template_report.pdf (47 pages, 404531 bytes).
+Output written on template_report.pdf (47 pages, 414070 bytes).
 PDF statistics:
- 230 PDF objects out of 1000 (max. 8388607)
+ 232 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

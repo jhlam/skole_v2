@@ -193,7 +193,6 @@ $1 − \delta$
 
 
 
-
 \subsection{Random Algorithm}
 The last one is the random algorithm. The random algorithm just picks a random seed node. This approach is the simplest to implement and easiest. The downside is that this is random and there are no strategic choosing of seed node. 
 
@@ -221,7 +220,7 @@ A component with PL implemented would be able to connect to the PS through a AXI
 One problem during graph analyzation and calculation is finding suitable graphs to analyses. Generate graphs with desired properties is not easy to do. One solution proposed by Chakrabartiy et al is to use the "recursive matrix" or R-mat model. The R-mat model generates graph with only a few parameters, the generated graph will naturally have the small world properties and follows the laws of normal graphs, and have a quick generation speed \cite{Rmat2004}. The R-mat models goal is to generate graphs that matches the degree distribution, exhibits a " community " structure and have a small diameter and matches other criteria. \cite{Rmat2004}. The algorithm to generate such a recursive matrix is as follows: The idea is to partition the adjacency matrix into four equally sized part branded A,B,C,D, as shown in Figure\ref{fig:flipDiagonal}. The adjacency matrix starts by having all element set to 0. Each new edge is "dropped" onto the adjacency matrix. Which section the edge would be placed in, is chosen randomly. Each section have a probability of $\textit{a, b, c, d}$, and $a + b + c + d = 1$. After a section is chosen, the partition that was chosen is partitioned again. This continues until the chosen section is a 1x1 square and the edge is dropped there. From the algorithm, we can see that the R-mat generator are capable to generate graphs with total numbers of node $ \textit{V} = 2^x$. Since the algorithm partitioned the matrix into four part. This is approach would only generate a directed graph. To generate undirected graph, $b = c$ and the adjacency matrix must make a "copy flip" on the diagonal elements, like Figure \ref{fig:flipDiagonal}. 
 
 \begin{figure}
-\includegraphics{Figures/flip_matrix}
+\includegraphics[scale=0.6]{Figures/flip_matrix}
 \caption{How the adjacency matrix is flipped on the diagonal}
 \label{fig:flipDiagonal}
 \end{figure}

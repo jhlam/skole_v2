@@ -78,6 +78,13 @@ Pedro Domingos and Matt Richardson.
 \newblock Mining the network value of customers.
 \newblock pages 57--66, 2001.
 
+\bibitem{Chen:2009:EIM:1557019.1557047}
+Wei Chen, Yajun Wang, and Siyu Yang.
+\newblock Efficient influence maximization in social networks.
+\newblock In {\em Proceedings of the 15th ACM SIGKDD International Conference
+  on Knowledge Discovery and Data Mining}, KDD '09, pages 199--208, New York,
+  NY, USA, 2009. ACM.
+
 \bibitem{HLSTutorial}
 J.~Cong, B.~Liu, S.~Neuendorffer, J.~Noguera, K.~Vissers, and Z.~Zhang.
 \newblock High-level synthesis for fpgas: From prototyping to deployment.

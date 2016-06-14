@@ -15,15 +15,15 @@ Database file #1: my_references.bib
 Warning--I'm ignoring MaximizeSpread2003's extra "author" field
 --line 18 of file my_references.bib
 Warning--entry type for "VIVADOHLS" isn't style-file defined
---line 640 of file my_references.bib
+--line 632 of file my_references.bib
 Warning--entry type for "FPGASoCManual" isn't style-file defined
---line 747 of file my_references.bib
+--line 739 of file my_references.bib
 Warning--entry type for "PYTHON" isn't style-file defined
---line 754 of file my_references.bib
+--line 746 of file my_references.bib
 Warning--entry type for "graph500" isn't style-file defined
---line 762 of file my_references.bib
+--line 754 of file my_references.bib
 Warning--entry type for "FPGAOVERVIEW" isn't style-file defined
---line 778 of file my_references.bib
+--line 770 of file my_references.bib
 Warning--empty journal in Rmat2004
 Warning--empty journal in greedyInfluenc2005
 Warning--empty journal in HybridBFS2015
