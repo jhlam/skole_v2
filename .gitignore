@@ -51,3 +51,8 @@ Temporary Items
 *.blg
 *.aux
 *.gz
+*.log
+*.lof
+*.gz
+*.aux
+*.toc
