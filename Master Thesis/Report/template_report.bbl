@@ -234,17 +234,4 @@ Virat Agarwal, Fabrizio Petrini, Davide Pasetto, and David~A. Bader.
   High Performance Computing, Networking, Storage and Analysis}, SC '10, pages
   1--11, Washington, DC, USA, 2010. IEEE Computer Society.
 
-\bibitem{murase1992linear}
-M.~Murase.
-\newblock Linear feedback shift register, February~18 1992.
-\newblock US Patent 5,090,035.
-
-\bibitem{PYTHON}
-Anaconda.
-\newblock {Anaconda} python 2.7, 2015.
-
-\bibitem{graph500}
-Graph 500~Steering Committee.
-\newblock {Graph 500 Benchmark 1 } ("search"), 2010.
-
 \end{thebibliography}

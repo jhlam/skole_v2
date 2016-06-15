@@ -1,15 +1,15 @@
 \chapter{Introduction} \label{intro}
 
 \section{Motivation}
-\textit{Information Diffusion} is a field in network research where a message, or data, is propagated through a \textit{network} or a \textit{graph}. The message originates from a chosen set of nodes, known as \textit{seed nodes}. These seed nodes passes the message to its neighbours through the edges and thus propagates the message over the entire network. The effectiveness of the Diffusion is measured through the spread and the speed of propagation and is dependent on the chosen seed nodes. By finding the most optimal set of seed node, we can potentially stop an epidemic by vaccinating influential nodes, we can find important target for viral marketing by giving free sample, and use this information to quickly spread message during disaster scenarios\cite{InformationDiffusionThroughBlogspace} \cite{Romero:2011:DMI:1963405.1963503}.
+\textit{Information Diffusion} is a field in network research where a message, or data, is propagated through a \textit{network} or a \textit{graph}. The message originates from a chosen set of vertices, known as \textit{seed nodes}. These seed nodes pass the message to its neighbours through the edges and thus propagates the message over the entire network. The effectiveness of the Diffusion is measured through the spread and the speed of propagation and is dependent on the chosen seed nodes. By finding the most optimal set of seed node, we can potentially stop an epidemic by vaccinating influential vertices, we can find important targets for viral marketing by giving free samples, and use this information to spread messages quickly during disaster scenarios\cite{InformationDiffusionThroughBlogspace} \cite{Romero:2011:DMI:1963405.1963503}.
 
-There are multiple studies done regarding information diffusion, \cite{cha2010measuring}, \cite{InformationDiffusionThroughBlogspace}, \cite{5694014},  \cite{InfoDiffAndExternalInfluInNetworks}. But as far as we know, there are none that focus on optimizing the seed selection in hardware. The current seed selection algorithm is an greedy solution\cite{greedyInfluenc2005}, where every set of nodes is tested and the set with best coverage and time is chosen. This is a time consuming process and highly parallelizable, which makes it a good candidate for \textit{Field-programmable gate arrays}(FPGAs). 
+There are multiple studies done regarding information diffusion, \cite{InformationDiffusionThroughBlogspace},\cite{cha2010measuring},  \cite{5694014},  \cite{InfoDiffAndExternalInfluInNetworks}. But as far as we know, there are none that focuses on optimizing the seed selection in hardware. The current seed selection algorithm is a greedy solution\cite{greedyInfluenc2005}, where every set of vertices is tested and the set with the best coverage and time is chosen. This is a time-consuming process and highly parallelizable, which makes it a good candidate for \textit{Field-programmable gate arrays}(FPGAs). 
 
-\textit{High Level Syntesis} (HLS) transform high level behaviour and constrains to lower level design.\cite{52214}. It makes it possible to implement an algorithm in high level language, C or C++, and generate an optimal design in \textit{verilog} or \textit{VHDL}. Verilog and VHDL are hardware descriptive languages designed to describe digital systems \cite{thomas2008verilog}. 
+\textit{High Level Syntesis} (HLS) transform high level behaviour and constraints to lower level design.\cite{52214}. It makes it possible to implement an algorithm in high level language, C or C++, and generate an optimal design in \textit{verilog} or \textit{VHDL}. Verilog and VHDL are hardware descriptive languages designed to describe digital systems \cite{thomas2008verilog}. 
 
 Unlike traditional hardware design, HLS allows programmers with limited knowledge of hardware design to create an optimal custom \textit{Intellectual property core}(IP-core). In HLS, programmers can test out different optimization schemes in a short period of time, thus reducing development overhead.  
 
-In this thesis, we have implemented a simple IP-core that performs information diffusion using the \textit{Independen Cascade model} (ICM) as \textit{Breadth-First Search} (BFS) over boolean semirings. This is done by using HLS as the development tool. 
+In this thesis, we have implemented a simple IP-core that performs information diffusion using the \textit{Independen Cascade model} (ICM) as \textit{Breadth-First Search} (BFS) over boolean semiring. This is done by using HLS as the development tool. 
 
 
 \section{Assignment Interpretation}
@@ -17,15 +17,15 @@ From the assignment text, these task were chosen as the main focus of this thesi
 \textbf{Task 1 \textit{(mandatory)}} Implement Information Diffusion as Sparse matrix vector multiplication, with high level language C.  \\ \hfil \\ \hfil
 \textbf{Task 2 \textit{(mandatory)}} Tailor the implementation of Information Diffusion for synthesise with Vivado HLS.   \\ \hfil \\ \hfil
 \textbf{Task 3 \textit{(optional)}} Implement said design on a  Zynq FPGA board. \\ \hfil \\ \hfil
-\textbf{Task 4 \textit{(optional)}} Extend the system to be able to handle graph in the size of toy graphs(containing $2^{26})$ nodes) \\ \hfil \\ \hfil
+\textbf{Task 4 \textit{(optional)}} Extend the system to be able to handle graph in the size of toy graphs(containing $2^{26})$ vertices) \\ \hfil \\ \hfil
 
 
 \section{Report Structure}
 We have here the basic outline for this report and a short overview of the remainder of this report:\\ \hfill
 
-\textbf{Chapter 2: Background} contains the theory regarding network, information diffusion, matrix vector multiplication and high level synthesis. \\ \hfil \\ \hfil
+\textbf{Chapter 2: Background} contains the theory regarding networks, information diffusion, matrix-vector multiplication and high level synthesis. \\ \hfil \\ \hfil
 \textbf{Chapter 3: Related Work} gives a short introduction of the state of the art of HLS implementations, information diffusion research and different optimization of BFS.\\ \hfil \\ \hfil
 \textbf{Chapter 4: Design and Implementation} present our implementation of our IP-core and give a brief introduction regarding HLS implementation and optimization.  \\ \hfil \\ \hfil
 \textbf{Chapter 5: Result and Discussion} will compare the result our core generated compared to a C-simulation. We will also discuss some of the design choices regarding the IP-core. \\ \hfil \\ \hfil
 \textbf{Chapter 6: Future Work} present how our design can be further improved. \\ \hfil \\ \hfil
-\textbf{Chapter 7: Conclusion} provides a concluding remarks regarding this paper and a summary of the identified tasks. \\ \hfil \\ \hfil
+\textbf{Chapter 7: Conclusion} provides concluding remarks regarding this paper and a summary of the identified tasks. \\ \hfil \\ \hfil

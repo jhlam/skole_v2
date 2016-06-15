@@ -7,7 +7,7 @@ In this chapter, we will look at the fundamental concepts and theory of the diff
  
 
 \section{Information Diffusion}
-Information diffusion is looking at how information is propagated through a network. A vertex can be either activated(infected) or inactivated(healthy/noninfected), each node can spread the contagion(activation,infection) to their neighbour. Some examples would be how a meme, a trend or a disease is spread through a community. The process consist of a set of starter nodes, which we will call seed nodes, that are "infected" at initial time step. During each time step, there are a percentage $p_g$ where the "infected" nodes would "infect" its neighbours. Seed nodes is a set of $k$ nodes that in the initial time-step are infected. They will pass on the information/infection during each time-step and the information/infection will propagate through the network. 
+Information diffusion is looking at how information is propagated through a network. A vertex can be either activated(infected) or inactivated(healthy/noninfected), each vertex can spread the contagion(activation,infection) to their neighbour. Some examples would be how a meme, a trend or a disease is spread through a community. The process consists of a set of starter vertices, which we will call seed nodes, which are "infected" at initial time step. During each time step, there are a percentage $p_g$ where the "infected" vertices would "infect" its neighbours. Seed nodes is a set of $k$ vertices that in the initial time-step are infected. They will pass on the information/infection during each iteration, and the information/infection will propagate through the network. 
 
  
 \section{Basic Diffusion Models}
@@ -19,59 +19,59 @@ ICM is a model where each spread of contagion is dependent on a "coin flip". Eac
 %Forlar hvordan ICM Funker%
 
 \begin{figure}[!ht]
-	\begin{subfigure}{0.3\textwidth}
-		\includegraphics[width=\textwidth]{Figures/ICM_step1}
-		\caption{Initial state} 
-		\label{fig:ICM}
-	\end{subfigure}
-	\begin{subfigure}{0.3\textwidth}
-		\includegraphics[width=\textwidth]{Figures/ICM_step2}
-		\caption{second state, activated by C is marked blue} 
-		\label{fig:ICM2}
-	\end{subfigure}
-	\begin{subfigure}{0.3\textwidth}
-		\includegraphics[width=\textwidth]{Figures/ICM_step3}
-		\caption{third state, activated by E is marked red, no more activation from C} 
-		\label{fig:ICM3}
-	\end{subfigure}
-	\caption{Independent cascade model}
-	\label{fig:ICM_step}
+    \begin{subfigure}{0.3\textwidth}
+        \includegraphics[width=\textwidth]{Figures/ICM_step1}
+        \caption{Initial state} 
+        \label{fig:ICM}
+    \end{subfigure}
+    \begin{subfigure}{0.3\textwidth}
+        \includegraphics[width=\textwidth]{Figures/ICM_step2}
+        \caption{second state, activated by C is marked blue} 
+        \label{fig:ICM2}
+    \end{subfigure}
+    \begin{subfigure}{0.3\textwidth}
+        \includegraphics[width=\textwidth]{Figures/ICM_step3}
+        \caption{third state, activated by E is marked red, no more activation from C} 
+        \label{fig:ICM3}
+    \end{subfigure}
+    \caption{Independent cascade model}
+    \label{fig:ICM_step}
 \end{figure}
 
 
-For the LTM activation is not dependent on a probability and a "coin flip", but a internal threshold of activated neighbours. The spread of contagion is dependent on how large of a fraction of their neighbour is activated. For our example, let say that for a person to be infected, 0.6 of their total neighbour must be infected before they can contract the contagion. In Figure \ref{fig:LTM}, we see that in the initial state \textit{A},\textit{B} and \textit{D} are infected. For \textit{C}, more then 0.6 of its total neighbours are activated, this resulted in an activation of it too as seen in Figure \ref{fig:linearThresh3}.  We can see that both \textit{E} and \textit{F} have only 0.5 of their neighbours activated, and thus in Figure \ref{fig:linearThresh3} no more activation is presence.
+For the LTM activation is not dependent on a probability and a "coin flip", but an internal threshold of activated neighbours. The spread of contagion is dependent on how large of a fraction of their neighbour is activated. For our example, let say that for a person to be infected, 0.6 of their total neighbour must be infected before they can contract the contagion. In Figure \ref{fig:LTM}, we see that in the initial state \textit{A},\textit{B} and \textit{D} are infected. For \textit{C}, more than 0.6 of its total neighbours are activated, this resulted in an activation of it too as seen in Figure \ref{fig:linearThresh3}.  We can see that both \textit{E} and \textit{F} have only 0.5 of their neighbours activated, and thus in Figure \ref{fig:linearThresh3} no more activation is presence.
 
 
 %FIX these figures theta_V is actually b_v%
 \begin{figure}[!ht] \label{fig:LTM}
-	\begin{subfigure}{0.3\textwidth}
-		\includegraphics[width=\textwidth]{Figures/LTM_step1}
-		\caption{Initial state, A,B,D is activated.} 
-		\label{fig:linearThresh}
-	\end{subfigure}
-	\begin{subfigure}{0.3\textwidth}
-		\includegraphics[width=\textwidth]{Figures/LTM_step2}
-		\caption{Second state, S is activated and marked blue.} 
-		\label{fig:linearThresh2}
-	\end{subfigure}
-	\begin{subfigure}{0.3\textwidth}
-		\includegraphics[width=\textwidth]{Figures/LTM_step2}
-		\caption{Third state, no more activation, since both E and F have less then 0.6 activated neighbours.} 
-		\label{fig:linearThresh3}
-	\end{subfigure}
-	\caption{Linear Threshold mode}
+    \begin{subfigure}{0.3\textwidth}
+        \includegraphics[width=\textwidth]{Figures/LTM_step1}
+        \caption{Initial state, A,B,D is activated.} 
+        \label{fig:linearThresh}
+    \end{subfigure}
+    \begin{subfigure}{0.3\textwidth}
+        \includegraphics[width=\textwidth]{Figures/LTM_step2}
+        \caption{Second state, S is activated and marked blue.} 
+        \label{fig:linearThresh2}
+    \end{subfigure}
+    \begin{subfigure}{0.3\textwidth}
+        \includegraphics[width=\textwidth]{Figures/LTM_step2}
+        \caption{Third state, no more activation, since both E and F have less then 0.6 activated neighbours.} 
+        \label{fig:linearThresh3}
+    \end{subfigure}
+    \caption{Linear Threshold mode}
 \end{figure}
 
 
 A real world example of the LTM would be e.g. A new product on the marked. People would adopt the new product it enough of their acquaintance is using it (activated). While ICM would be more directed marketing. Where free samples are given to some users. Those users would then promote the product and potentially spread the product to other.
 
-BFS is a special case of ICM, both algorithm traverse graphs in a level by level approach. The difference is that bfs will activate the visited vertices, while ICM depends on the probability.
+BFS is a special case of ICM, both algorithm traverse graphs in a level-by-level approach. The difference is that bfs will activate the visited vertices while ICM depends on the probability.
 
 
 \section{Breadth First Search}
-BFS is a tree traversal algorithm. BFS start at the root node \textit{$v_r$}. The algorithm then stores all $v_r$s children nodes in a \textit{queue}. The algorithm then takes the first node from the queue, \textit{$v_1$} and stores all the children nodes to \textit{$v_1$} in the back of the queue. This process continues until the queue is empty and all the nodes have been iterated over. 
+BFS is a tree traversal algorithm. BFS start at the root vertex \textit{$v_r$}. The algorithm then stores all $v_r$s children vertices in a \textit{queue}. The algorithm then takes the first vertex from the queue, \textit{$v_1$} and stores all the children vertices to \textit{$v_1$} in the back of the queue. This process continues until the queue is empty and all the vertices have been iterated over. 
 
-BFS is a common graph iteration algorithm, but is often limited by the irregular memory access where the algorithm have to find the data stored in different spaces in memory.
+BFS is a common graph iteration algorithm but is often limited by the irregular memory access where the algorithm has to find the data stored in different spaces in memory.
 
 %%forklar hva frontier er for noe
 \begin{algorithm}
@@ -103,36 +103,36 @@ BFS is a common graph iteration algorithm, but is often limited by the irregular
 
 The motivation for transforming breadth first search as matrix-vector multiplication is that displaying the graph algorithm as a matrix multiplication can display the data access pattern for the algorithm and can be readily optimized  \cite{AlgoToMath}.
 
-As mentioned before, ICM is a special case of the breadth first search. By modifying the algorithm proposed earlier, we can in theory perform ICM with matrix-vector multiplication.  
+As mentioned before, ICM is a special case of the breadth first search. By modifying the algorithm proposed earlier, we can, in theory, perform ICM with matrix-vector multiplication.  
 
 \section{Matrix Notations}
-Nodes and edges are not the only way to represent a network. Networks can be represented as \textit{sparse adjacency matrices} \cite{AlgoToMath} \cite{McAndrew1963}. By representing networks as sparse matrix, we can often discover different ways to optimize the algorithm, or a different structure to store the data. The adjacency matrix in particular, is a interesting way to represent the graph. A graph $G =(V,E)$, G have N vertices and M edges, this correspond to a N$\times$N adjacency matrix called A. If A(i,j)=1, then there is an edge from $v_i$ to $v_j$. Otherwise its 0. In Figure:\ref{fig:AdjaToMatrix}, we can see how a undirected graph can be represented as an adjacency matrix. Each square symbolise a connection between two nodes. To generate a undirected graph as a adjacency matrix, the matrix must be mirrored diagonally, meaning if A(i,j)=1, then A(j,i)=1, if this is not true, then the matrix would be representing a directed graph.
+vertices and edges are not the only way to represent a network. Networks can be represented as \textit{sparse adjacency matrices} \cite{AlgoToMath} \cite{McAndrew1963}. By representing networks as a sparse matrix, we can often discover different ways to optimize the algorithm, or a different structure to store the data. The adjacency matrix, in particular, is an interesting way to represent the graph. A graph $G =(V,E)$, G have N vertices and M edges, and this correspond to a N$\times$N adjacency matrix called A. If A(i,j)=1, then there is an edge from $v_i$ to $v_j$. Otherwise, it is 0. In Figure:\ref{fig:AdjaToMatrix}, we can see how a undirected graph can be represented as an adjacency matrix. Each square symbolises a connection between two vertices. To generate a undirected graph as an adjacency matrix, the matrix must be mirrored diagonally, meaning if A(i,j)=1, then A(j,i)=1, if this is not true, then the matrix would be representing a directed graph.
 
 \subsection{Sparse Matrix}
-A sparse matrix is a matrix containing few nonzero. Social graph with few edges would often be represented as a sparse matrix. Since sparse matricies only have few non-zero elements, by storing only the non-zero elements, we can have savings in memory.
+A sparse matrix is a matrix containing few nonzero. A social graph with few edges would often be represented as a sparse matrix. Since sparse matrices only have few non-zero elements, by storing only the non-zero elements, we can have savings in memory.
 
 \begin{figure}
-	\begin{subfigure}{0.5\textwidth}
-	\includegraphics[width=\textwidth]{Figures/AdjacencyMatrix}
-	\caption{The adjacency matrix}
-	\label{fig:AdjacencyM}
-	\end{subfigure}
-	\begin{subfigure}{0.5\textwidth}
-	\includegraphics[width=\textwidth]{Figures/simpleGraph}
-	\caption{The graph corresponding to the adjacency matrix}
-	\label{fig:matrix}
-	\end{subfigure}
- 	\caption{Sparse matrix to graph}
- 	\label{AdjaToMatrix}
+    \begin{subfigure}{0.5\textwidth}
+    \includegraphics[width=\textwidth]{Figures/AdjacencyMatrix}
+    \caption{The adjacency matrix}
+    \label{fig:AdjacencyM}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+    \includegraphics[width=\textwidth]{Figures/simpleGraph}
+    \caption{The graph corresponding to the adjacency matrix}
+    \label{fig:matrix}
+    \end{subfigure}
+     \caption{Sparse matrix to graph}
+     \label{AdjaToMatrix}
 \end{figure}
 
 \subsection{Breadth First Search as Matrix Multiplication.} \label{BFS as Matrix}
-From  \cite{AlgoToMath}, we can see that BFS can be recast as algebraic operations. BFS can be performed by applying matrix-vector multiplication over Boolean semirings \cite{HybridBFS2015}. The graph is represented as a adjacency matrix A, then for the root node, a vector x(root)=1 is multiplied with the matrix A. $A \times x_0 = y_0$. $y_0$ is the result after the first matrix-vector multiplication and in the next iteration, $x_1 = y_0$. We can see from the Figure\ref{fig:bfsMatrix}
+From  \cite{AlgoToMath}, we can see that BFS can be recast as algebraic operations. BFS can be performed by applying matrix-vector multiplication over Boolean semirings \cite{HybridBFS2015}. The graph is represented as an adjacency matrix A, then for the root vertex, a vector x(root)=1 is multiplied with the matrix A. $A \times x_0 = y_0$. $y_0$ is the result of the first matrix-vector multiplication and in the next iteration, $x_1 = y_0$. We can see from the Figure\ref{fig:bfsMatrix}
 
 \begin{figure}
-	\includegraphics[width=\textwidth]{Figures/BFS_algo}
-	\caption{BFS on Boolean semiring}
-	\label{fig:bfsMatrix}
+    \includegraphics[width=\textwidth]{Figures/BFS_algo}
+    \caption{BFS on Boolean semiring}
+    \label{fig:bfsMatrix}
 \end{figure}
 \subsection{Semiring}
 A $semiring$ is a set of elements with two binary operations. The two operations are often known as "addition"(+) and "multiplication"($\times$).  As we shown in previous section, the algorithm perform matrix multiplication uses the two operations, multiplications and addition. In  \cite{HybridBFS2015}, the AND and OR operator was chosen instead of the normal addition and multiplication. 
@@ -140,54 +140,54 @@ A $semiring$ is a set of elements with two binary operations. The two operations
  
  
 \section{Seed Selection Algorithm}
-The seed selection algorithm, is the algorithm used to select the initial $k$ seed nodes to be chosen at the start of the information diffusion. Each selected nodes is in the initial timestep activated. During each timestep, the seed nodes will propagate the activation along the network depend on what diffusion model is used. We can compare it to a new gadget or a cosmetic company trying to promote a new product. By selecting a few influential persons to give a free sample, the new trend would most likely  spread through $viral$ $marketing$ \cite{ViralMarketing}. The seed selection algorithm would be the algorithm to select the few influential individuals to receive this free sample. There are multiple different scheme to choose from, in this section, we will focus on four different algorithms, greedy algorithm, degree algorithm, random algorithm and the independent greedy algorithm.
+The seed selection algorithm is the algorithm used to select the initial $k$ seed nodes to be chosen at the start of the information diffusion. Each selected vertices is in the initial timestep activated. During each time step, the seed nodes will propagate the activation along the network depend on what diffusion model is used. We can compare it to a new gadget or a cosmetic company trying to promote a new product. By selecting a few influential persons to give a free sample, the new trend would most likely spread through $viral$ $marketing$ \cite{ViralMarketing}. The seed selection algorithm would be the algorithm to select the few influential individuals to receive this free sample. There are multiple different schemes to choose from, in this section, we will focus on four different algorithms, greedy algorithm, degree algorithm, random algorithm and the independent greedy algorithm.
 
 \subsection{The Greedy Algorithm}
-The greedy algorithm \cite{greedyInfluenc2005} \cite{Chen:2009:EIM:1557019.1557047} proposed by Kempe et al, is known to be the best algorithm according to the result from  \cite{greedyInfluenc2005}. The greedy algorithm starts by itterate over the entire network and finds one node that have the largest coverage and stores that node in the set $S$. The algorithm then activates that node from A, and computes the coverage of each node in the network with the previous chosen node. After the algorithm finds the second node, that node is stored in A with the previous node and we have now chosen two seed node. The algorithm continues until we have chosen \textit{k} seed nodes, where each have been tested to have maximum coverage in relation with the previous chosen nodes. To compute the maximum coverage, the algorithm have to test every combination of nodes together, this results in heavy computation and the algorithm would therefore not scale well.
+The greedy algorithm \cite{greedyInfluenc2005} \cite{Chen:2009:EIM:1557019.1557047} proposed by Kempe et al, is known to be the best algorithm according to the result from  \cite{greedyInfluenc2005}. The greedy algorithm starts by iterate over the entire network and finds one vertex that has the largest coverage and stores that vertex in the set $S$. The algorithm then activates that vertex from A, and computes the coverage of each vertex in the network with the previously chosen vertex. After the algorithm finds the second vertex, that vertex is stored in A with the previous vertex and we have now chosen two seed vertex. The algorithm continues until we have chosen \textit{k} seed nodes, where each has been tested to have maximum coverage in relation with the previously chosen vertices. To compute the maximum coverage, the algorithm has to test every combination of vertices together, this results in heavy computation and the algorithm would therefore not scale well.
 
-We can look at the greedy algorithm as a special case of BFS with a transistion probability. Each node in the network will be chosen as the seed node for the
+We can look at the greedy algorithm as a special case of BFS with a transition probability. Each vertex in the network will be chosen as the seed node for the
 
  \begin{algorithm}
 \caption{Greedy Algorithm}
 \begin{algorithmic}[1]
 \State Start with $A = \oldemptyset$
 \While{$|A| \leq l$}
-\State For each node $x$, use repeated sampling to approximate $\sigma(A \cup {x}) $ to within ($1 \pm \varepsilon$) with probability
+\State For each vertex $x$, use repeated sampling to approximate $\sigma(A \cup {x}) $ to within ($1 \pm \varepsilon$) with probability
 $1 − \delta$
-\State Add the node with largest estimate for $\sigma(A \cup {x})$ to A.
+\State Add the vertex with largest estimate for $\sigma(A \cup {x})$ to A.
 \EndWhile
-\State Output the set $A$ of nodes.
+\State Output the set $A$ of vertices.
 \end{algorithmic}
 \end{algorithm}
 
 \subsection{The Degree Algorithm}
-Another popular algorithm is the degree algorithm \cite{greedyInfluenc2005}. Unlike the greedy algorithm, does not compute the coverage of node, the algorithm picks the top \textit{k} nodes according to the degree distribution instead. The node chooses the top \textit{k} nodes with the highest degree and stores them as the seed nodes. This approach benefits over the greedy algorithm by not having as much computation time as the greedy algorithm since only one itteration is needed to compute the degree to node. The disadvantage is that this algorithm does not take the degree correlation into acount. As mentioned in section \ref{degreeCorr}, high degree nodes would often have common node as neighbor. This would result in multiple overlapping activated node choosen.
+Another popular algorithm is the degree algorithm \cite{greedyInfluenc2005}. Unlike the greedy algorithm, does not compute the coverage of vertex, the algorithm picks the top \textit{k} vertices according to the degree distribution instead. The vertex chooses the top \textit{k} vertices with the highest degree and stores them as the seed nodes. This approach benefits over the greedy algorithm by not having as much computation time as the greedy algorithm since only one iteration is needed to compute the degree to the vertex. The disadvantage is that this algorithm does not take the degree correlation into account. As mentioned in section \ref{degreeCorr}, high degree vertices would often have common vertex as neighbours. This would result in multiple overlapping activated vertices chosen.
 
 \begin{algorithm}
 \caption{Degree Algorithm}
 \begin{algorithmic}[1]
 \State Start with $A = \oldemptyset$
 \While{$|A| \leq l$}
-\State For each node $x$, use repeated sampling to compute DegreeMax($x$).
-\State Add the node with largest degree to A.
+\State For each vertex $x$, use repeated sampling to compute DegreeMax($x$).
+\State Add the vertex with largest degree to A.
 \EndWhile
-\State Output the set $A$ of nodes.
+\State Output the set $A$ of vertices.
 \end{algorithmic}
 \end{algorithm}
 
 \subsection{Independent Algorithm}
-Another algorithm is the independent greedy algorithm. The algorithm iterates through the network, computing the spread of each node. The algorithm then chooses the vertex with the largest coverage independent of the other previous chosen nodes. This algorithm is a special case of the greedy algorithm mentioned above.
+Another algorithm is the independent greedy algorithm. The algorithm iterates through the network, computing the spread of each vertex. The algorithm then chooses the vertex with the largest coverage independent of the other previous chosen vertices. This algorithm is a special case of the greedy algorithm mentioned above.
 
 \begin{algorithm}
 \caption{Independent Algorithm}
 \begin{algorithmic}[1]
 \State Start with $A = \oldemptyset$
 \While{$|A| \leq l$}
-\State For each node $x$, use repeated sampling to approximate $\sigma(A \cup {x}) $ to within ($1 \pm \varepsilon$) with probability
+\State For each vertex $x$, use repeated sampling to approximate $\sigma(A \cup {x}) $ to within ($1 \pm \varepsilon$) with probability
 $1 − \delta$
-\State Add the node with largest estimate for $\sigma({x})$ to A.
+\State Add the vertex with largest estimate for $\sigma({x})$ to A.
 \EndWhile
-\State Output the set $A$ of nodes.
+\State Output the set $A$ of vertices.
 \end{algorithmic}
 \end{algorithm}
 
@@ -198,13 +198,13 @@ The last one is the random algorithm. The random algorithm just picks a random s
 
  
  
-\section{High Level Synthesis}
+\section{High-Level Synthesis}
 
-High Level Synthesis converst algorithms implemented on higher level down to \textit{Register Transfer Level} (RTL)\cite{HLSTutorial}. RTL is models of digital circuits displaying flow of data between register, logical operations and such. It is commonly used to descripe low level digital systems. HLS is known to be able to reduce development effort and cost of creating specialized hardware compared to traditional hand-drawn RTL designs\cite{zhao2016improving}\cite{Zuo:2013:IHL:2435264.2435271}\cite{HLSTutorial}. By taking high level language such as C, C++ and SystemC implementations and generate the optimal architecture. HLS allows the user to generate custom \textit{Intellectual Property}(IP) core. An IP-core is a custom created data core that have an output and an input port.
+High-Level Synthesis convert algorithms implemented on higher level down to \textit{Register Transfer Level} (RTL)\cite{HLSTutorial}. RTL is models of digital circuits displaying the flow of data between register, logical operations and such. It is commonly used to describe low-level digital systems. HLS is known to be able to reduce development effort and cost of creating specialized hardware compared to traditional hand-drawn RTL designs\cite{zhao2016improving}\cite{Zuo:2013:IHL:2435264.2435271}\cite{HLSTutorial}. By taking high-level languages such as C, C++, and SystemC implementations and generate the optimal architecture. HLS allows the user to generate custom \textit{Intellectual Property}(IP) core. An IP-core is a custom created data core that has an output and an input port.
 
 
 \section{ZedBoard}
-The Zedboard that we used for this project, is \textit{Xilinx Zynq-7000 All programmable System-on-chip(SoC)} Z-7020. Consist of a dual core \textit{ARM cortex-A9 MPCore} based processing system(PS) and an \textit{Artix-7 XC7Z020} FPGA. The FPGA is the \textit{programmable logic}(PL). The Zedboard have 512 MB DDR3 RAM, 256MB Quad-SPI Flash and 4GB SD card.\cite{FPGASoCManual}. The system offers the flexibility and scalability of an FPGA\citep{FPGAOVERVIEW}. 
+The Zedboard that we used for this project, is \textit{Xilinx Zynq-7000 All programmable System-on-chip(SoC)} Z-7020. Consist of a dual core \textit{ARM cortex-A9 MPCore} based processing system(PS) and an \textit{Artix-7 XC7Z020} FPGA. The FPGA is the \textit{programmable logic}(PL). The Zedboard have 512 MB DDR3 RAM, 256MB Quad-SPI Flash, and 4GB SD card.\cite{FPGASoCManual}. The system offers the flexibility and scalability of an FPGA\citep{FPGAOVERVIEW}. 
 
 THe FPGA use \textit{Advance eXtensible Interface}(AXI4)bus protocol. There are three types if AXI4 interfaces:
 \begin{itemize}
@@ -217,7 +217,7 @@ A component with PL implemented would be able to connect to the PS through a AXI
 
 
 \section{RMat} \label{rmat}
-One problem during graph analyzation and calculation is finding suitable graphs to analyses. Generate graphs with desired properties is not easy to do. One solution proposed by Chakrabartiy et al is to use the "recursive matrix" or R-mat model. The R-mat model generates graph with only a few parameters, the generated graph will naturally have the small world properties and follows the laws of normal graphs, and have a quick generation speed \cite{Rmat2004}. The R-mat models goal is to generate graphs that matches the degree distribution, exhibits a " community " structure and have a small diameter and matches other criteria. \cite{Rmat2004}. The algorithm to generate such a recursive matrix is as follows: The idea is to partition the adjacency matrix into four equally sized part branded A,B,C,D, as shown in Figure\ref{fig:flipDiagonal}. The adjacency matrix starts by having all element set to 0. Each new edge is "dropped" onto the adjacency matrix. Which section the edge would be placed in, is chosen randomly. Each section have a probability of $\textit{a, b, c, d}$, and $a + b + c + d = 1$. After a section is chosen, the partition that was chosen is partitioned again. This continues until the chosen section is a 1x1 square and the edge is dropped there. From the algorithm, we can see that the R-mat generator are capable to generate graphs with total numbers of node $ \textit{V} = 2^x$. Since the algorithm partitioned the matrix into four part. This is approach would only generate a directed graph. To generate undirected graph, $b = c$ and the adjacency matrix must make a "copy flip" on the diagonal elements, like Figure \ref{fig:flipDiagonal}. 
+One problem during graph analyzation and calculation is finding suitable graphs to analyses. Generate graphs with desired properties are not easy to do. One solution proposed by Chakrabartiy et al. is to use the "recursive matrix" or R-mat model. The R-mat model generates networks with only a few parameters, the generated graph will naturally have the small world properties and follows the laws of normal vertices, and have a quick generation speed \cite{Rmat2004}. The R-mat models goal is to generate graphs that match the degree distribution, exhibits a " community " structure and have a small diameter and matches other criteria. \cite{Rmat2004}. The algorithm to generate such a recursive matrix is as follows: The idea is to partition the adjacency matrix into four equally sized part branded A, B, C, D, as shown in Figure\ref{fig:flipDiagonal}. The adjacency matrix starts by having all element set to 0. Each new edge is "dropped" onto the adjacency matrix. Which section the edge would be placed in, is chosen randomly. Each section have a probability of $\textit{a, b, c, d}$, and $a + b + c + d = 1$. After a section is chosen, the partition that was chosen is partitioned again. This continues until the chosen section is a 1x1 square and the edge is dropped there. From the algorithm, we can see that the R-mat generator is capable of generating graphs with total numbers of vertex $ \textit{V} = 2^x$. Since the algorithm partitioned the matrix into four part. This is approach would only generate a directed graph. To generate undirected graph, $b = c$ and the adjacency matrix must make a "copy flip" on the diagonal elements, like Figure \ref{fig:flipDiagonal}. 
 
 \begin{figure}
 \includegraphics[scale=0.6]{Figures/flip_matrix}

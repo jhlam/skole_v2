@@ -1,15 +1,50 @@
 \chapter{Result and Discussion} \label{result}
+Here we will present the results that we received from the experiments. The algorithm was able to finish an extreme scaled down version of the original sparse matrix-vector multiplication. The result was a 16 $\times$ 16 adjacency matrix, which is unfortunate since our goal was to iterate over large graphs. But these results are still interesting and proves that HLS can be an improvement over traditional hardware design.
 
-as we can see, the algorithm was able to finish a extreme scaled down version of the original sparse matrix. This is unfortunate, since our goal was to iterate over large graphs. But these results are still interesting and proves that HLS can be an improvement.
-We were able to run a implementation with pipeline and loop unrolling, but that resulted in a too large core and the synthesiser took over 24 hour to synthesise, Which was too long and was therefore abandoned.
-This resulted in that most of the numbers here are taken from Vivado HLS simulation and Cosimulation. |
 
-\section{•}
+We were able to run an implementation that utilizes pipeline and loop unrolling, but that resulted in a too large core, and the synthesiser took over 24 hours to synthesise, Which was too long and was therefore abandoned.
+This resulted in that most of the numbers here are taken from Vivado HLS simulation and Cosimulation. 
+
+\section{Results}
+In Table \ref{ta:Vary buffer size}, we can see that by varying the buffer size, we get variable results. We can see that in C simulation, by using a larger buffer so that the IP core can take the entire row of the matrix, the result is somewhat better than the other. While for the RTL implementation, there does not seem to be the case. For the RTL simulation, by choosing buffer size equal to eight, get a better time. 
+
+\begin{table}[ht]
+\centering
+\caption{Results from Zedboard, different sized seed nodes.}
+\label{tab:Different K}
+\begin{tabular}{|l|c|c|c|}
+\hline
+ k     & coverage     &  Time usage(difusin)in microseconds & Seed selection time usage in micro sec \\ \hline
+ 1  &         0.198750            &     32.74 us & 0.45 us \\ \hline
+ 2  &         0.247500             &     936.88 us &    0.87 us \\ \hline
+ 3  &         0.306250            &     1237.62 us &1.26 us     \\ \hline
+ 4  &         0.391250            &     1501.96 us &1.63 us     \\ \hline
+ 5  &         0.460000            &     1936.74 us &    1.97 us \\ \hline
+\end{tabular}
+\end{table}
+
+
+from these results, we can clearly see that the RTL simulation is faster then the C simulation.
+\begin{table}[]
+\centering
+\caption{Results from simulation with vary buffer size}
+\label{ta:Vary buffer size}
+\begin{tabular}{|l|c|c|}
+\hline
+Buffersize & Time in milliseconds (with C simulation) & Time in milliseconds (with RTL simulation)\\ \hline
+ 4  &         7.200 ms            &     0.920 ms \\ \hline
+ 8  &         6.260 ms            &     0.680 ms     \\ \hline
+ 16    &          5.180 ms            &     0.760 ms     \\
+\hline
+\end{tabular}
+\end{table}
 
 \section{Performance}
-As we can see, the hardware implementation is better then the C-simulated implementation, even at this low scale, we can see that the
+As we can see, the hardware implementation is better than the C-simulated implementation, even at this low scale, we can see that the
 
-We have here included a snapshot of our synthesis report. As we can see, we have a rather large utilization of look up table(LUT) and flip flop(FF). This is the result of the PIPELINE and Loop unrolling. Our high level implementation does contains several Loops and dependencies, this results in a large amount of resource used. 
+
+
+We have here included a snapshot of our synthesis report. As we can see, we have a rather large usage of look-up table(LUT) and flip-flop(FF) for our design. This is the result of the PIPELINE and Loop unrolling. Our high-level implementation does contain several Loops and dependencies; this results in a significant amount of resource used. 
 
 We used the following variables to generate our adjacency matrix:
 \begin{itemize}
@@ -21,9 +56,7 @@ We used the following variables to generate our adjacency matrix:
 \item \textbf{k (Scale)} = 4
 \end{itemize}
 
-By using the random-function provided by Python, we placed '1' in it's correct place. After the matrix is generated, we further applied a diagonal copying as shown in Figure:\ref{fig:flipDiagonal}. This is obligatory to generate an undirected graph.
-
-For this project, a graph with size 1024 was used. This is a microscopic graph compared to graphs used in network analysis. 
+By using the random() function provided by Python, we placed '1' in its designated position. After the matrix was generated, we further applied a diagonal copying as shown in Figure:\ref{fig:flipDiagonal}. This is obligatory to create an undirected graph.
 
 \begin{figure}
 \includegraphics{Figures/Rmat}
@@ -35,14 +68,16 @@ For this project, a graph with size 1024 was used. This is a microscopic graph c
 
 \section{Discussion}
 \subsection*{Analysis of the performance}
-Our IP core was originally designed for networks with 1024 vertices, but after implementing with the optimization directives, the resource usage were out of bound. This resulted in a severe scale down for this project. The resulted network was down to the size of 16 vertices. In network analysis, this is such a small scale that the results from this experiment would only serve as a proof of concepts. 
+Our IP core was originally designed for networks with 1024 vertices, but after implementing with the optimization directives, the resource usage was out of bound. This resulted in a severe scale down for this project. The resulted network was down to the size of 16 vertices. In network analysis, this is such a small scale that the results from this experiment would only serve as a proof of concepts. 
+
+The original idea with table \ref{ta:Vary buffer size} was to observe how the IP-core behaved when it would receive part of the matrix row. By finding an optimal buffer size that would satiate the bandwidth and still receive enough elements to compute. The result we got was not very representative. Since our implementation and the matrix we used was so small compared to other networks, we would not have been close to satiate the bandwidth.
  
 \subsection*{problem that was encountered}
-One problem that was encountered during this project was that the output signal from the synthesiser was not the correct direction. The output signal was often set as input signal. The HLS would automatically set the values as output signal or input signal.The reurn value from a funciton would be set as a the output signal, while the variable that the function takes, would be set as the input signal. Another way wo specify that something is the output signal would be to explicitly set them as pointer arguments. This will in set the signal to be output signal.
+One problem that was encountered during this project was that the output signal from the synthesiser was not the correct direction. The output signal was often set as input signal. The HLS would automatically set the values as output signal or input signal.The return value from a function would be set as an output signal, while the variable that the function takes, would be set as the input signal. Another way to specify that something is the output signal would be to explicitly set them as pointer arguments. This will in set the signal to be the output signal.
 
-Another problem that I often encountered, was that the Vivado HLS often stop working. The problem was fixed by creating a new project and include the previous files.
+Another problem that I often encountered was that the Vivado HLS often stop working. The problem was fixed by creating a new project and include the previous files.
 
-Another problem, was that some times the Vivado HLS was not able to Cosimulate the implementation the first time. I was not able to find a solution to this problem except resynthesis the project. 
+Another problem was that sometimes the Vivado HLS was not able to Cosimulate the implementation the first time. I was not able to find a solution to this issue except resynthesis the project. 
 
-There were incidence where the implementation on the Zedboard did not behave as the implementation. This was solved by reprogramming the device and sometimes, restarting the Zedboard.
+There was incidence where the implementation on the Zedboard did not behave as the implementation. This was solved by reprogramming the device and sometimes, restarting the Zedboard.
 
