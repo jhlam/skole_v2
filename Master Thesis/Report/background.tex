@@ -65,7 +65,7 @@ For the LTM activation is not dependent on a probability and a "coin flip", but 
 
 A real world example of the LTM would be e.g. A new product on the market. People would adopt the new product it enough of their acquaintance is using it (activated). While ICM would be more directed marketing. Where free samples are given to some users. Those users would then promote the product and potentially spread the product to other.
 
-ICM is a special case of BFS, both algorithm traverse graphs in a level-by-level approach. The difference is that for ICM, each node is not guaranteed to be activated. If a ICM had a activation chance of a hundred percent, then the ICM would be the same as BFS.
+ICM is a special case of BFS, both algorithm traverse graphs in a level-by-level approach. The difference is that for ICM, each node is not guaranteed to be activated. If an ICM had an activation chance of a hundred percent, then the ICM would be the same as BFS.
 
 
 \section{Breadth First Search}
@@ -106,7 +106,7 @@ The motivation for transforming breadth first search as matrix-vector multiplica
 As mentioned before, ICM is a special case of the breadth first search. By modifying the algorithm proposed earlier, we can, in theory, perform ICM with matrix-vector multiplication.  
 
 \section{Matrix Notations}
-Networks can be represented as \textit{sparse adjacency matrices} \cite{AlgoToMath} \cite{McAndrew1963}. By representing networks as a sparse matrix, we can often discover different ways to optimize the algorithm, or a different structure to store the data. The adjacency matrix, in particular, is an interesting way to represent the graph. A graph $G =(V,E)$, G have N vertices and M edges, and this correspond to a N$\times$N adjacency matrix called A. If A(i,j)=1, then there is an edge from $v_i$ to $v_j$. Otherwise, it is 0. In Figure:\ref{fig:AdjacencyM}, we can see how a undirected graph can be represented as an adjacency matrix. Each square symbolises a connection between two vertices. To generate a undirected graph as an adjacency matrix, the matrix must be mirrored diagonally, meaning if A(i,j)=1, then A(j,i)=1, if this is not true, then the matrix would be representing a directed graph.
+Networks can be represented as \textit{sparse adjacency matrices} \cite{AlgoToMath} \cite{McAndrew1963}. By representing networks as a sparse matrix, we can often discover different ways to optimize the algorithm, or a different structure to store the data. The adjacency matrix, in particular, is an interesting way to represent the graph. A graph $G =(V, E)$, G have N vertices and M edges, and this correspond to a N$\times$N adjacency matrix called A. If A(i,j)=1, then there is an edge from $v_i$ to $v_j$. Otherwise, it is 0. In Figure:\ref{fig:AdjacencyM}, we can see how a undirected graph can be represented as an adjacency matrix. Each square symbolises a connection between two vertices. To generate a undirected graph as an adjacency matrix, the matrix must be mirrored diagonally, meaning if A(i,j)=1, then A(j,i)=1, if this is not true, then the matrix would be representing a directed graph.
 
 \subsection{Sparse Matrix}
 A sparse matrix is a matrix containing few nonzero entries. A social graph with few edges would often be represented as a sparse matrix. Since sparse matrices only have few non-zero elements, by storing only the non-zero elements, we can have savings in memory. 
@@ -136,7 +136,7 @@ From  \cite{AlgoToMath}, we can see that BFS can be recast as algebraic operatio
 \end{figure}
 
 \subsection{Semiring}
-A $semiring$ is a set of elements with only two binary operations. The two operations are often known as "addition"(+) and "multiplication"($\times$). Semirings is often used in abstract algebra to categorize a set of elements. Boolean semirings is a set of binary elements: '1' and '0' and defined as $1+1=1$.  As we shown in previous section, the algorithm perform matrix multiplication uses the two operations, multiplications and addition. In  \cite{HybridBFS2015}, the AND and OR operator was chosen instead of the normal addition and multiplication. 
+A $semiring$ is a set of elements with only two binary operations. The two operations are often known as "addition"(+) and "multiplication"($\times$). Semirings are often used in abstract algebra to categorize a set of elements. Boolean semirings is a set of binary elements: '1' and '0' and defined as $1+1=1$.  As we shown in the previous section, the algorithm performs matrix multiplication uses the two operations, multiplications, and addition. In  \cite{HybridBFS2015}, the AND and OR operator were chosen instead of the normal addition and multiplication. 
 
  
  
@@ -146,7 +146,7 @@ The seed selection algorithm is the algorithm used to select the initial $k$ see
 \subsection{The Greedy Algorithm}
 The greedy algorithm \cite{greedyInfluenc2005} \cite{Chen:2009:EIM:1557019.1557047} proposed by Kempe et al, is known to be the optimal algorithm in seed selection according to the result from  \cite{greedyInfluenc2005}.
 
-The greedy algorithm starts by choosing one vertex and perform one ICM over the entire network and stores its spread. This process repeats for every vertices available. The vertex with the best coverage would then be stored in a set \textit{S}. The algorithm continues and choose a new vertex in combination with the vertices in set S. This process continues until there are \textit{k} different vertices in set S, which will be returned as the most optimal set of k vertices for this matrix. 
+The greedy algorithm starts by choosing one vertex and perform one ICM over the entire network and stores its spread. This process repeats for every vertex available. The vertex with the best coverage would then be stored in a set \textit{S}. The algorithm continues and chooses a new vertex in combination with the vertices in set S. This process continues until there are \textit{k} different vertices in set S, which will be returned as the most optimal set of k vertices for this matrix. 
 
  \begin{algorithm}
 \caption{Greedy Algorithm}
@@ -154,7 +154,7 @@ The greedy algorithm starts by choosing one vertex and perform one ICM over the 
 \State Start with $A = \oldemptyset$
 \While{$|A| \leq l$}
 \State For each vertex $x$, use repeated sampling to approximate $\sigma(A \cup {x}) $ to within ($1 \pm \varepsilon$) with probability
-$1 − \delta$
+$1 − \delta$    
 \State Add the vertex with largest estimate for $\sigma(A \cup {x})$ to A.
 \EndWhile
 \State Output the set $A$ of vertices.
@@ -195,13 +195,13 @@ $1 − \delta$
 
 
 \subsection{Random Algorithm}
-The last one is the random algorithm. The random algorithm just picks a random seed node. This approach is the simplest to implement and easiest. The downside is that this is random and there are no strategic choosing of seed node. 
+The last one is the random algorithm. The random algorithm just picks a random seed node. This approach is the simplest to implement and easiest. The downside is that this is random, and there are no strategic choosing of seed node. 
 
  
  
 \section{High-Level Synthesis}
 
-High-Level Synthesis convert algorithms implemented on higher level down to \textit{Register Transfer Level} (RTL)\cite{HLSTutorial}. RTL is models of digital circuits displaying the flow of data between register, logical operations and such. It is commonly used to describe low-level digital systems. HLS is known to be able to reduce development effort and cost of creating specialized hardware compared to traditional hand-drawn RTL designs\cite{zhao2016improving}\cite{Zuo:2013:IHL:2435264.2435271}\cite{HLSTutorial}. By taking high-level languages such as C, C++, and SystemC implementations and generate the optimal architecture. HLS allows the user to generate custom \textit{Intellectual Property}(IP) core. An IP-core is a custom created data core that has an output and an input port.
+High-Level Synthesis convert algorithms implemented on the higher level down to \textit{Register Transfer Level} (RTL)\cite{HLSTutorial}. RTL is models of digital circuits displaying the flow of data between register, logical operations and such. It is commonly used to describe low-level digital systems. HLS is known to be able to reduce development effort and cost of creating specialized hardware compared to traditional hand-drawn RTL designs\cite{zhao2016improving}\cite{Zuo:2013:IHL:2435264.2435271}\cite{HLSTutorial}. By taking high-level languages such as C, C++, and SystemC implementations and generate the optimal architecture. HLS allows the user to generate custom \textit{Intellectual Property}(IP) core. An IP-core is a custom created data core that has an output and an input port.
 
 
 \section{ZedBoard}
@@ -214,11 +214,11 @@ THe FPGA use \textit{Advance eXtensible Interface}(AXI4)bus protocol. There are 
 \item \textbf{AXI4} - For memory mapped applications.
 \end{itemize} 
 
-A component with PL implemented would be able to connect to the PS through a AXI4 bus port. The close coupling between t
+A component with PL implemented would be able to connect to the PS through an AXI4 bus port. The close coupling between t
 
 
 \section{RMat} \label{rmat}
-One problem during graph analyzation and calculation is finding suitable graphs to analyses. Generating large reproducibal networks is one of the strengths of R-mat. One solution proposed by Chakrabartiy et al. is to use the "recursive matrix" or R-mat model. The R-mat model generates networks with only a few parameters, the generated graph will naturally have the small world properties and follows the laws of normal vertices, and have a quick generation speed \cite{Rmat2004}. The R-mat models goal is to generate graphs that match the degree distribution, exhibits a " community " structure and have a small diameter and matches other criteria. \cite{Rmat2004}. The algorithm to generate such a recursive matrix is as follows: The idea is to partition the adjacency matrix into four equally sized part branded A, B, C, D, as shown in Figure\ref{fig:flipDiagonal}. The adjacency matrix starts by having all element set to 0. Each new edge is "dropped" onto the adjacency matrix. Which section the edge would be placed in, is chosen randomly. Each section have a probability of $\textit{a, b, c, d}$, and $a + b + c + d = 1$. After a section is chosen, the partition that was chosen is partitioned again. This continues until the chosen section is a 1x1 square and the edge is dropped there. From the algorithm, we can see that the R-mat generator is capable of generating graphs with total numbers of vertex $ \textit{V} = 2^x$. Since the algorithm partitioned the matrix into four part. This is approach would only generate a directed graph. To generate undirected graph, $b = c$ and the adjacency matrix must make a "copy flip" on the diagonal elements, like Figure \ref{fig:flipDiagonal}. The Rmat is reproducible if the random placement of the vertices are deterministic.
+One problem during graph analyzation and calculation is finding suitable graphs to analyses. Generating large reproducible networks is one of the strengths of R-mat. One solution proposed by Chakrabartiy et al. is to use the "recursive matrix" or R-mat model. The R-mat model generates networks with only a few parameters, the generated graph will naturally have the small world properties and follows the laws of normal vertices, and have a quick generation speed \cite{Rmat2004}. The R-mat models goal is to generate graphs that match the degree distribution, exhibits a " community " structure and have a small diameter and matches other criteria. \cite{Rmat2004}. The algorithm to generate such a recursive matrix is as follows: The idea is to partition the adjacency matrix into four equally sized part branded A, B, C, D, as shown in Figure\ref{fig:flipDiagonal}. The adjacency matrix starts by having all element set to 0. Each new edge is "dropped" onto the adjacency matrix. Which section the edge would be placed in, is chosen randomly. Each section have a probability of $\textit{a, b, c, d}$, and $a + b + c + d = 1$. After a section is chosen, the partition that was chosen is partitioned again. This continues until the chosen section is a 1x1 square and the edge is dropped there. From the algorithm, we can see that the R-mat generator is capable of generating graphs with total numbers of vertex $ \textit{V} = 2^x$. Since the algorithm partitioned the matrix into four part. This is approach would only generate a directed graph. To generate undirected graph, $b = c$ and the adjacency matrix must make a "copy flip" on the diagonal elements, like Figure \ref{fig:flipDiagonal}. The Rmat is reproducible if the random placement of the vertices is deterministic.
 
 \begin{figure}
 \includegraphics[scale=0.6]{Figures/flip_matrix}

@@ -27,19 +27,18 @@
 \contentsline {chapter}{\numberline {4}Design and Implementation}{23}
 \contentsline {section}{\numberline {4.1}IP-core}{23}
 \contentsline {subsection}{\numberline {4.1.1}High Level Implementation}{23}
-\contentsline {subsection}{\numberline {4.1.2}Seed Selection}{24}
+\contentsline {subsection}{\numberline {4.1.2}Seed Selection}{25}
 \contentsline {section}{\numberline {4.2}Linear-Feedback Shift Register}{25}
 \contentsline {section}{\numberline {4.3}Design flow of HLS}{25}
-\contentsline {section}{\numberline {4.4}Network and graph generator}{27}
-\contentsline {section}{\numberline {4.5}How is it connected}{27}
+\contentsline {section}{\numberline {4.4}Network and graph generator}{28}
+\contentsline {section}{\numberline {4.5}How is it connected}{28}
 \contentsline {section}{\numberline {4.6}Xilinx SDK}{28}
 \contentsline {section}{\numberline {4.7}Optimization}{28}
-\contentsline {section}{\numberline {4.8}Potential improvement}{28}
-\contentsline {section}{\numberline {4.9}Global vs local probability}{29}
 \contentsline {chapter}{\numberline {5}Result and Discussion}{31}
 \contentsline {section}{\numberline {5.1}Experimental Setup}{31}
 \contentsline {section}{\numberline {5.2}Results}{32}
-\contentsline {section}{\numberline {5.3}Performance}{33}
-\contentsline {section}{\numberline {5.4}Discussion}{33}
-\contentsline {chapter}{\numberline {6}Future work}{35}
-\contentsline {chapter}{\numberline {7}Conclusion}{37}
+\contentsline {section}{\numberline {5.3}Performance}{32}
+\contentsline {section}{\numberline {5.4}Discussion}{34}
+\contentsline {subsection}{\numberline {5.4.1}Results}{34}
+\contentsline {chapter}{\numberline {6}Future work}{39}
+\contentsline {chapter}{\numberline {7}Conclusion}{41}
