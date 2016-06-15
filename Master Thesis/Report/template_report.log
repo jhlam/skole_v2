@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.12)  14 JUN 2016 18:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.12)  15 JUN 2016 04:28
 entering extended mode
 **./template_report.tex
 (template_report.tex
@@ -293,7 +293,11 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
 (template_report.aux (front.aux) (abstract.aux) (sammendrag.aux)
 (assignment.aux) (introduction.aux) (background.aux) (related_work.aux)
-(method.aux) (result.aux) (future_work.aux) (conclusion.aux))
+(method.aux
+
+LaTeX Warning: Label `intro' multiply defined.
+
+) (result.aux) (future_work.aux) (conclusion.aux))
 \openout1 = `template_report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
@@ -566,12 +570,6 @@ i-vated(healthy/noninfected),
  []
 
 
-Overfull \hbox (0.62172pt too wide) in paragraph at lines 10--11
-\OT1/cmr/m/n/10 each node can spread the con-ta-gion(activation,infection) to t
-heir neigh-bour. Some
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
@@ -650,11 +648,12 @@ File: Figures/BFS_algo.png Graphic file (type png)
 <use Figures/BFS_algo.png>
 Package pdftex.def Info: Figures/BFS_algo.png used on input line 133.
 (pdftex.def)             Requested size: 350.5364pt x 181.90898pt.
- [11 <./Figures/AdjacencyMatrix.png> <./Figures/simpleGraph.png>]
+ [11 <./Figures/AdjacencyMatrix.png> <./Figures/simpleGraph.png>] [12 <./Figure
+s/BFS_algo.png>]
 Missing character: There is no â in font cmr10!
 Missing character: There is no ˆ in font cmr10!
 Missing character: There is no ’ in font cmr10!
- [12 <./Figures/BFS_algo.png>]
+
 
 LaTeX Warning: Reference `degreeCorr' on page 13 undefined on input line 164.
 
@@ -686,13 +685,7 @@ Chapter 3.
 
 
 
-]
-Overfull \hbox (19.4829pt too wide) in paragraph at lines 16--17
-\OT1/cmr/m/n/10 early-1990s[[]][[]]. Carnegie-Mellon Uni-ver-sity de-sign au-to
-ma-tion (CMU-DA)[[]][[]]
- []
-
-[18] [19]
+] [18] [19]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
@@ -705,38 +698,118 @@ Missing character: There is no “ in font cmr10!
 
 ]
 Chapter 4.
-[23] [24] <Figures/placeholder.png, id=134, 1399.47844pt x 813.0375pt>
-File: Figures/placeholder.png Graphic file (type png)
+[23] [24
 
-<use Figures/placeholder.png>
-Package pdftex.def Info: Figures/placeholder.png used on input line 36.
-(pdftex.def)             Requested size: 419.84677pt x 243.91313pt.
+]
+Chapter 5.
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 17--22
 
-Overfull \hbox (69.31036pt too wide) in paragraph at lines 36--37
-[][] 
  []
 
-[25 <./Figures/placeholder.png>] [26]
-<Figures/Rmat.png, id=141, 246.1697pt x 213.79875pt>
-File: Figures/Rmat.png Graphic file (type png)
- <use Figures/Rmat.png>
-Package pdftex.def Info: Figures/Rmat.png used on input line 83.
-(pdftex.def)             Requested size: 246.16908pt x 213.79822pt.
 
-[27] [28 <./Figures/Rmat.png>]) [29]
+Underfull \hbox (badness 10000) in paragraph at lines 17--22
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--22
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--22
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--22
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--22
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 27--72
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--72
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--72
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--72
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--72
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--72
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--72
+
+ []
+
+[26] [27]
 \openout2 = `result.aux'.
 
- (result.tex [30
+ (result.tex [28
 
 
 
 ]
-Chapter 5.
-[31]) [32]
+Chapter 6.
+
+Overfull \hbox (64.90868pt too wide) in paragraph at lines 15--24
+ [][] 
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 28.
+
+
+Overfull \hbox (102.06433pt too wide) in paragraph at lines 32--40
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29]
+<Figures/Rmat.png, id=149, 246.1697pt x 213.79875pt>
+File: Figures/Rmat.png Graphic file (type png)
+ <use Figures/Rmat.png>
+Package pdftex.def Info: Figures/Rmat.png used on input line 62.
+(pdftex.def)             Requested size: 246.16908pt x 213.79822pt.
+
+[30] [31 <./Figures/Rmat.png>]) [32]
 \openout2 = `future_work.aux'.
 
  (future_work.tex
-Chapter 6.
+Chapter 7.
 [33
 
 
@@ -745,7 +818,7 @@ Chapter 6.
 \openout2 = `conclusion.aux'.
 
  (conclusion.tex
-Chapter 7.
+Chapter 8.
 ) [35
 
 
@@ -778,15 +851,18 @@ Missing character: There is no © in font cmr10!
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 7126 strings out of 493335
- 104314 string characters out of 3136680
+ 7113 strings out of 493335
+ 104062 string characters out of 3136680
  197322 words of memory out of 3000000
- 10451 multiletter control sequences out of 15000+200000
+ 10439 multiletter control sequences out of 15000+200000
  10423 words of font info for 38 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,8n,56p,1736b,450s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,9n,56p,1747b,450s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C
@@ -801,9 +877,9 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files (x86)/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on template_report.pdf (47 pages, 414070 bytes).
+Output written on template_report.pdf (47 pages, 399943 bytes).
 PDF statistics:
- 232 PDF objects out of 1000 (max. 8388607)
+ 231 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
