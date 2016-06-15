@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.12)  15 JUN 2016 04:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.12)  15 JUN 2016 19:12
 entering extended mode
 **./template_report.tex
 (template_report.tex
@@ -293,11 +293,7 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
 (template_report.aux (front.aux) (abstract.aux) (sammendrag.aux)
 (assignment.aux) (introduction.aux) (background.aux) (related_work.aux)
-(method.aux
-
-LaTeX Warning: Label `intro' multiply defined.
-
-) (result.aux) (future_work.aux) (conclusion.aux))
+(method.aux) (result.aux) (future_work.aux) (conclusion.aux))
 \openout1 = `template_report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
@@ -620,72 +616,62 @@ Package pdftex.def Info: Figures/LTM_step2.png used on input line 58.
 (pdftex.def)             Requested size: 105.16199pt x 101.3868pt.
  [8 <./Figures/ICM_step1.png> <./Figures/ICM_step2.png> <./Figures/ICM_step3.pn
 g>] [9 <./Figures/LTM_step1.png> <./Figures/LTM_step2.png>]
-
-LaTeX Warning: Reference `fig:AdjaToMatrix' on page 10 undefined on input line 
-109.
-
 <Figures/AdjacencyMatrix.png, id=76, 164.615pt x 164.615pt>
 File: Figures/AdjacencyMatrix.png Graphic file (type png)
 
 <use Figures/AdjacencyMatrix.png>
 Package pdftex.def Info: Figures/AdjacencyMatrix.png used on input line 116.
-(pdftex.def)             Requested size: 175.2682pt x 175.27223pt.
+(pdftex.def)             Requested size: 84.1299pt x 84.13087pt.
 
 <Figures/simpleGraph.png, id=77, 404.51125pt x 334.24875pt>
 File: Figures/simpleGraph.png Graphic file (type png)
 
 <use Figures/simpleGraph.png>
 Package pdftex.def Info: Figures/simpleGraph.png used on input line 121.
-(pdftex.def)             Requested size: 175.2682pt x 144.8258pt.
-
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 115--125
-[]$[]$ $[]$ 
- []
-
-[10] <Figures/BFS_algo.png, id=83, 529.98pt x 275.0275pt>
+(pdftex.def)             Requested size: 84.1299pt x 69.51598pt.
+ [10]
+<Figures/BFS_algo.png, id=83, 529.98pt x 275.0275pt>
 File: Figures/BFS_algo.png Graphic file (type png)
 
 <use Figures/BFS_algo.png>
 Package pdftex.def Info: Figures/BFS_algo.png used on input line 133.
-(pdftex.def)             Requested size: 350.5364pt x 181.90898pt.
- [11 <./Figures/AdjacencyMatrix.png> <./Figures/simpleGraph.png>] [12 <./Figure
-s/BFS_algo.png>]
+(pdftex.def)             Requested size: 245.3744pt x 127.3367pt.
+ [11 <./Figures/AdjacencyMatrix.png> <./Figures/simpleGraph.png> <./Figures/BFS
+_algo.png>]
 Missing character: There is no â in font cmr10!
 Missing character: There is no ˆ in font cmr10!
 Missing character: There is no ’ in font cmr10!
-
-
-LaTeX Warning: Reference `degreeCorr' on page 13 undefined on input line 164.
-
+ [12]
 Missing character: There is no â in font cmr10!
 Missing character: There is no ˆ in font cmr10!
 Missing character: There is no ’ in font cmr10!
-[13]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 211.
+ [13]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 212.
 
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 211.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 212.
  [14]
 <Figures/flip_matrix.png, id=100, 464.73625pt x 163.61125pt>
 File: Figures/flip_matrix.png Graphic file (type png)
 
 <use Figures/flip_matrix.png>
-Package pdftex.def Info: Figures/flip_matrix.png used on input line 223.
+Package pdftex.def Info: Figures/flip_matrix.png used on input line 224.
 (pdftex.def)             Requested size: 278.84389pt x 98.1675pt.
-) [15] [16 <./Figures/flip_matrix.png>]
+) [15 <./Figures/flip_matrix.png>]
 \openout2 = `related_work.aux'.
 
 
-(related_work.tex
+(related_work.tex [16
+
+
+
+]
 Chapter 3.
-[17
-
-
-
-] [18] [19]
+[17] [18] [19]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
@@ -698,140 +684,144 @@ Missing character: There is no “ in font cmr10!
 
 ]
 Chapter 4.
-[23] [24
-
-]
-Chapter 5.
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 17--22
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 17--22
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 17--22
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 17--22
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 17--22
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 17--22
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
-
- []
-
-)
-Underfull \hbox (badness 10000) in paragraph at lines 27--72
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--72
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--72
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--72
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--72
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--72
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--72
-
- []
-
-[26] [27]
-\openout2 = `result.aux'.
-
- (result.tex [28
-
-
-
-]
-Chapter 6.
-
-Overfull \hbox (64.90868pt too wide) in paragraph at lines 15--24
- [][] 
- []
-
+[23]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 28.
+               Default added (so using `!tbp') on input line 31.
 
+<Figures/Overview_of_system.png, id=130, 706.64pt x 686.565pt>
+File: Figures/Overview_of_system.png Graphic file (type png)
 
-Overfull \hbox (102.06433pt too wide) in paragraph at lines 32--40
- [][] 
+<use Figures/Overview_of_system.png>
+Package pdftex.def Info: Figures/Overview_of_system.png used on input line 32.
+(pdftex.def)             Requested size: 211.99364pt x 205.97108pt.
+ [24]
+<Figures/LFSR.png, id=135, 690.58pt x 294.09875pt>
+File: Figures/LFSR.png Graphic file (type png)
+ <use Figures/LFSR.png>
+Package pdftex.def Info: Figures/LFSR.png used on input line 47.
+(pdftex.def)             Requested size: 345.28915pt x 147.04901pt.
+
+<Figures/HLSworkflow.png, id=136, 334.24875pt x 504.88625pt>
+File: Figures/HLSworkflow.png Graphic file (type png)
+
+<use Figures/HLSworkflow.png>
+Package pdftex.def Info: Figures/HLSworkflow.png used on input line 58.
+(pdftex.def)             Requested size: 167.12396pt x 252.44249pt.
+ [25 <./Figures/Overview_of_system.png> <./Figures/HLSworkflow.png>] [26 <./Fig
+ures/LFSR.png>]
+<Figures/design_1.pdf, id=146, 614.295pt x 794.97pt>
+File: Figures/design_1.pdf Graphic file (type pdf)
+
+<use Figures/design_1.pdf>
+Package pdftex.def Info: Figures/design_1.pdf used on input line 100.
+(pdftex.def)             Requested size: 430.00356pt x 556.4752pt.
+
+Overfull \hbox (79.46715pt too wide) in paragraph at lines 100--101
+[][] 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: Float too large for page by 80.55415pt on input line 103.
 
- [29]
-<Figures/Rmat.png, id=149, 246.1697pt x 213.79875pt>
-File: Figures/Rmat.png Graphic file (type png)
- <use Figures/Rmat.png>
-Package pdftex.def Info: Figures/Rmat.png used on input line 62.
-(pdftex.def)             Requested size: 246.16908pt x 213.79822pt.
+[27]) [28] [29] [30 <./Figures/design_1.pdf, page is rotated 270 degrees>]
+\openout2 = `result.aux'.
 
-[30] [31 <./Figures/Rmat.png>]) [32]
+
+(result.tex
+Chapter 5.
+<Figures//Rmat.png, id=168, 246.1697pt x 213.79875pt>
+File: Figures//Rmat.png Graphic file (type png)
+ <use Figures//Rmat.png>
+Package pdftex.def Info: Figures//Rmat.png used on input line 19.
+(pdftex.def)             Requested size: 123.08453pt x 106.89911pt.
+
+[31
+
+
+
+]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 57.
+
+[32 <./Figures//Rmat.png>] [33]) [34]
 \openout2 = `future_work.aux'.
 
  (future_work.tex
-Chapter 7.
-[33
+Chapter 6.
+[35
 
 
 
-]) [34]
+]) [36]
 \openout2 = `conclusion.aux'.
 
  (conclusion.tex
-Chapter 8.
-) [35
+Chapter 7.
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--9
+
+ []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 10--12
 
-] (template_report.bbl [36
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--12
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--18
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--18
+
+ []
+
+[37
+
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+
+ []
+
+) [38] (template_report.bbl
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ‰ in font cmr10!
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 51.
- [37] [38]
+ [39
+
+
+] [40]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no “ in font cmr10!
 Missing character: There is no Ä in font cmr10!
@@ -844,25 +834,22 @@ Missing character: There is no Ã in font cmr10!
 Missing character: There is no “ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no © in font cmr10!
- [39]) [40] (template_report.aux
+ [41]) [42] (template_report.aux
 (front.aux) (abstract.aux) (sammendrag.aux) (assignment.aux) (introduction.aux)
 (background.aux) (related_work.aux) (method.aux) (result.aux) (future_work.aux)
 (conclusion.aux))
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 7113 strings out of 493335
- 104062 string characters out of 3136680
- 197322 words of memory out of 3000000
- 10439 multiletter control sequences out of 15000+200000
+ 7156 strings out of 493335
+ 104872 string characters out of 3136680
+ 198322 words of memory out of 3000000
+ 10475 multiletter control sequences out of 15000+200000
  10423 words of font info for 38 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,9n,56p,1747b,450s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,12n,56p,1844b,450s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C
@@ -877,9 +864,9 @@ MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files (x86)/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on template_report.pdf (47 pages, 399943 bytes).
+Output written on template_report.pdf (49 pages, 507487 bytes).
 PDF statistics:
- 231 PDF objects out of 1000 (max. 8388607)
+ 253 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

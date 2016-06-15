@@ -1,7 +1,3 @@
 \section*{Abstract}
 
-
-Information Diffusion is often used for different simulations in network research because it simulates how information propagates thorough a network. Measuring spread and speed, we can find influential targets in the network. Such targets are optimal targets to pass message during disaster scenario, vaccinate to prevent spreading of a disease, or even targets for viral marketing. 
-
-
-High Level Synthesis (HLS) have in recent years matured greatly. With HLS, designing custom architectures  is no longer a dream.
+Information diffusion is where a message or data is passed from vertex to vertex in a network via edges. Information diffusion is often used for simulations in network research because it estimates how information propagates through a network. A set of vertices that in initial state contains the data is known as the \textit{seed nodes}. The diffusion starts at the seed nodes and propagates over the network. Finding the optimal seed nodes is a crucial part of information diffusion. The seed nodes are the optimal targets to start passing messages during a disaster scenario, vaccinate to prevent the spreading of a disease or even targets for viral marketing. Finding these seed nodes is an NP-hard problem and require a significant amount of computation. One common used model in information diffusion is the \textit{independent cascade model} (ICM). ICM can be performed as a \textit{sparse matrix-vector multiplication} (SPMV). 

@@ -85,6 +85,11 @@ Wei Chen, Yajun Wang, and Siyu Yang.
   on Knowledge Discovery and Data Mining}, KDD '09, pages 199--208, New York,
   NY, USA, 2009. ACM.
 
+\bibitem{ComplexNetwork2003}
+M.~E.~J. Newman.
+\newblock {\em The Structure and Function of Complex Networks}, volume~45.
+\newblock 2003.
+
 \bibitem{HLSTutorial}
 J.~Cong, B.~Liu, S.~Neuendorffer, J.~Noguera, K.~Vissers, and Z.~Zhang.
 \newblock High-level synthesis for fpgas: From prototyping to deployment.
@@ -227,11 +232,25 @@ Scott Beamer, Krste Asanovi{\'c}, and David Patterson.
 \newblock Direction-optimizing breadth-first search.
 \newblock {\em Scientific Programming}, 21(3-4):137--148, 2013.
 
-\bibitem{Agarwal:2010:SGE:1884643.1884670}
-Virat Agarwal, Fabrizio Petrini, Davide Pasetto, and David~A. Bader.
-\newblock Scalable graph exploration on multicore processors.
-\newblock In {\em Proceedings of the 2010 ACM/IEEE International Conference for
-  High Performance Computing, Networking, Storage and Analysis}, SC '10, pages
-  1--11, Washington, DC, USA, 2010. IEEE Computer Society.
+\bibitem{murase1992linear}
+M.~Murase.
+\newblock Linear feedback shift register, February~18 1992.
+\newblock US Patent 5,090,035.
+
+\bibitem{PYTHON}
+Anaconda.
+\newblock {Anaconda} python 2.7, 2015.
+
+\bibitem{graph500}
+Graph 500~Steering Committee.
+\newblock {Graph 500 Benchmark 1 } ("search"), 2010.
+
+\bibitem{optiDirect}
+Xilinx.
+\newblock Vivado design suite user guide high-level synthesis.
+
+\bibitem{ZedSpec}
+Zedboard.org.
+\newblock Zedboard technical specifications.
 
 \end{thebibliography}

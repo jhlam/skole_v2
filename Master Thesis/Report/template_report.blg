@@ -18,11 +18,21 @@ Warning--entry type for "VIVADOHLS" isn't style-file defined
 --line 632 of file my_references.bib
 Warning--entry type for "FPGASoCManual" isn't style-file defined
 --line 739 of file my_references.bib
+Warning--entry type for "PYTHON" isn't style-file defined
+--line 746 of file my_references.bib
+Warning--entry type for "graph500" isn't style-file defined
+--line 754 of file my_references.bib
 Warning--entry type for "FPGAOVERVIEW" isn't style-file defined
 --line 770 of file my_references.bib
+Warning--entry type for "ZedSpec" isn't style-file defined
+--line 827 of file my_references.bib
+Warning--entry type for "optiDirect" isn't style-file defined
+--line 834 of file my_references.bib
 Warning--empty journal in Rmat2004
 Warning--empty journal in greedyInfluenc2005
 Warning--empty journal in HybridBFS2015
 Warning--empty journal in MaximizeSpread2003
 Warning--empty journal in ViralMarketing
-(There were 9 warnings)
+Warning--can't use both volume and number fields in ComplexNetwork2003
+Warning--empty publisher in ComplexNetwork2003
+(There were 15 warnings)

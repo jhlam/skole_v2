@@ -1,7 +1,30 @@
 \chapter{Conclusion}
-For placeholder, need to have some text here. 
+In this report, we have explored the possibility to use HLS as a implementation tool to accelerate seed selection for information diffusion. We used a modified version of sparse matrix-vector multiplication to perform ICM iterations. We have implemented a simple IP-core that applies ICM with an adjacency matrix and a set of seed nodes. The core returns the percentage of infected nodes in the network. The design was loaded onto an FPGA and multiple test were conducted both on the chip and in simulation.
+
+ In this project, we were not able to synthesis a IP-core that could compute large matrices. This is likely resulted by the lack of customization for HLS in high-level implementations. 
+ 
+
+\textbf{Task 1 \textit{(mandatory)}} Implement information diffusion as sparse matrix-vector multiplication, with high level language C. Completed
+\\
+
+W have in this project implemented a modified sparse matrix-vector multiplication that perform ICM. The implementation detail can be found in Chapter \ref{methode}, and the theory can be found at \ref{background}  \\ \hfil \\ \hfil
+\textbf{Task 2 \textit{(mandatory)}} Tailor the implementation of Information Diffusion for synthesise with Vivado HLS. Complete \\
+
+The design was able to synthesise in Xilinx Vivado HLS and gave back somewhat interesting results. The detail about the HLS and different optimization used can be found at chapter \ref{methode}.  \\ \hfil \\ \hfil
+\textbf{Task 3 \textit{(optional)}} Implement said design on a  Zynq FPGA board.\\
+
+Out IP-core was able to upload on the FPGA and gave back result. Chapter \ref{result} presents the result from the FPGA and other 
+ \\ \hfil \\ \hfil
+ 
+\textbf{Task 4 \textit{(optional)}} Extend the system to be able to handle graph in the size of toy graphs(containing $2^{26})$ vertices) \\ \hfil \\ \hfil
+
+Due to unfamiliarity with HLS and time constrains. We were not able to extend the system to compute larger graph. \\
+
+
 
 This paper works as a proof of concept, where we can see that with minimal knowledge regarding HLS, I was able to generate a simple Sparse Matrix vector multiplication IP-core. We can see from the result from co-simulation, that custom core ran much better then the other. HLS was easy to use and provided with a quick development time. There are still some problem with the HLS tools, but compared to earlier version, this is much better.
+
+
 
 \begin{itemize}
 \item HLS was great tool

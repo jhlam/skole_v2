@@ -4,15 +4,16 @@ Information diffusion and seed selection in general computes gigantic graphs, an
 \begin{enumerate}
 \item \textbf{Different architecture} for this implementation, we used a core including the LFSR, it would be interesting to explore different architecture. One solution that we did not have the chance to explore, is implement a large buffer connected to a single LFSR that continuously generates random number. The implemented cores would then each pop one random number for each cointoss. This solution requires a large buffer and would potentially generate large overhead with reading from the buffer. A large enough buffer  would also be required since there are in worst case scenario for a single SpMV run, we would need $n^2$ cointoss. The potentially benefits of such a design would be better space utilization. A smaller core would use less resource of the Zedboard. This can result in more parallelization.
 
-\item \textbf{Use larger graph} In graph theory, graph used is often at scale(26-42). The smallest mentioned graph from Graph500, is $2^26$, a toy graph. Our graph is not even close to such a large graph.
+\item \textbf{Use larger graph} In graph theory, graph used is often at scale(26-42). The smallest mentioned graph from Graph500, is $2^{26}$, a toy graph. Our graph is not even close to such a large graph. It would be benefitial to test this architecture up against a larger graph. 
 
 \item \textbf{Customize algorithm} As mentioned in Chapter \ref{relatedWork}, HLS can generate a close to hand written design if the algorithm is customized for HLS. A interesting potential improvement would be to analyse algorithm and explore different solutions and implementation.
 
-\item \textbf{Compare different solutions} In this report, we have only showed the result from one architecture, it would be interesting to compare different shcems
+\item \textbf{Compare different solutions} In this report, we have only showed the result from one architecture, it would be interesting to compare different shcems and other solutions. 
 
 \item \textbf{Memory Optimization}. For this algorithm, we store the entire adacency matrix. This is inefficient for a sparse matrix. An potentially improvement would be to explore a different storage format for the adjacency matrix.
 
-\item \textbf{Try different seed selection algorithm}
+\item \textbf{Try different seed selection algorithm} In this report, we implemented the greedy seed selection. It would have been interesting to compare different seed selection algorithm and compare the results. There are papers \citep{Chen:2009:EIM:1557019.1557047} that proposes a alternative greedy solution .  
+\item \textbf{Better optimization with HLS} would result in potentially better utilization of the resources on the Zedboard. Our design was not the most optimal and could only compute small graphs. One future aspect would be to optimize for much larger networks.
 \end{enumerate}
 
 

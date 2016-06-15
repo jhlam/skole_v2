@@ -2,8 +2,37 @@
 Here we will present the results that we received from the experiments. The algorithm was able to finish an extreme scaled down version of the original sparse matrix-vector multiplication. The result was a 16 $\times$ 16 adjacency matrix, which is unfortunate since our goal was to iterate over large graphs. But these results are still interesting and proves that HLS can be an improvement over traditional hardware design.
 
 
-We were able to run an implementation that utilizes pipeline and loop unrolling, but that resulted in a too large core, and the synthesiser took over 24 hours to synthesise, Which was too long and was therefore abandoned.
 This resulted in that most of the numbers here are taken from Vivado HLS simulation and Cosimulation. 
+
+\section{Experimental Setup}
+For this experiment, we used a 16$\times$16 adjacency matrix generated with a R\_mat generator. A adjacency matrix with the following variable was created for this experiment.
+\begin{itemize}
+\item \textbf{A} = 0.57
+\item \textbf{B} = 0.19
+\item \textbf{C} = 0.19
+\item \textbf{D} = 1-0.57-0.19-0.19 = 0.05
+\item \textbf{Edge factor}  = 16
+\item \textbf{k (Scale)} = 4
+\end{itemize}
+
+\begin{figure}
+\includegraphics[scale=0.5]{/Rmat}
+\caption{The R-mat model \cite{Rmat2004}}
+\label{fig:Rmat}
+\end{figure}
+
+For this experiment, we set a global probability for activation at 5\% and a initial seed of 42 for the linear feedback shift register. We ran each information diffusion iteration 50 times and found the average coverage and time usage for each run, each run used a new initial seed, thus each run is different. 
+
+Our implementation was a greedy solution, where the PS generated a new set of seeds. 
+
+The processing system (PS) sends the matrix and frontier to the Processing logic (PL). The	
+
+The implementation was done on a Zedboard \cite{ZedSpec}, with a ZYNQ7 Processing system. The adjacency matrix was stored in the 4GB SD card. The Zedboard was using a 15000000 JTAG Clock Frequency.
+
+
+
+
+
 
 \section{Results}
 In Table \ref{ta:Vary buffer size}, we can see that by varying the buffer size, we get variable results. We can see that in C simulation, by using a larger buffer so that the IP core can take the entire row of the matrix, the result is somewhat better than the other. While for the RTL implementation, there does not seem to be the case. For the RTL simulation, by choosing buffer size equal to eight, get a better time. 
@@ -12,7 +41,7 @@ In Table \ref{ta:Vary buffer size}, we can see that by varying the buffer size, 
 \centering
 \caption{Results from Zedboard, different sized seed nodes.}
 \label{tab:Different K}
-\begin{tabular}{|l|c|c|c|}
+\begin{tabular}{| >{\centering\arraybackslash}m{0.5in} |  >{\centering\arraybackslash}m{0.7in} |  >{\centering\arraybackslash}m{1.0in} |  >{\centering\arraybackslash}m{1.0in}|} 
 \hline
  k     & coverage     &  Time usage(difusin)in microseconds & Seed selection time usage in micro sec \\ \hline
  1  &         0.198750            &     32.74 us & 0.45 us \\ \hline
@@ -29,7 +58,7 @@ from these results, we can clearly see that the RTL simulation is faster then th
 \centering
 \caption{Results from simulation with vary buffer size}
 \label{ta:Vary buffer size}
-\begin{tabular}{|l|c|c|}
+\begin{tabular}{| >{\centering\arraybackslash}m{0.7in} |  >{\centering\arraybackslash}m{1.2in} |  >{\centering\arraybackslash}m{1.2in} |} 
 \hline
 Buffersize & Time in milliseconds (with C simulation) & Time in milliseconds (with RTL simulation)\\ \hline
  4  &         7.200 ms            &     0.920 ms \\ \hline
@@ -46,23 +75,8 @@ As we can see, the hardware implementation is better than the C-simulated implem
 
 We have here included a snapshot of our synthesis report. As we can see, we have a rather large usage of look-up table(LUT) and flip-flop(FF) for our design. This is the result of the PIPELINE and Loop unrolling. Our high-level implementation does contain several Loops and dependencies; this results in a significant amount of resource used. 
 
-We used the following variables to generate our adjacency matrix:
-\begin{itemize}
-\item \textbf{A} = 0.57
-\item \textbf{B} = 0.19
-\item \textbf{C} = 0.19
-\item \textbf{D} = 1-0.57-0.19-0.19 = 0.05
-\item \textbf{Edge factor}  = 16
-\item \textbf{k (Scale)} = 4
-\end{itemize}
 
 By using the random() function provided by Python, we placed '1' in its designated position. After the matrix was generated, we further applied a diagonal copying as shown in Figure:\ref{fig:flipDiagonal}. This is obligatory to create an undirected graph.
-
-\begin{figure}
-\includegraphics{Figures/Rmat}
-\caption{The R-mat model \cite{Rmat2004}}
-\label{fig:Rmat}
-\end{figure}
 
 
 
