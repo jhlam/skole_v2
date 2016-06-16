@@ -10,35 +10,35 @@
 \contentsline {section}{\numberline {2.4}Matrix Notations}{10}
 \contentsline {subsection}{\numberline {2.4.1}Sparse Matrix}{10}
 \contentsline {subsection}{\numberline {2.4.2}Breadth First Search as Matrix Multiplication.}{11}
-\contentsline {subsection}{\numberline {2.4.3}Semiring}{11}
+\contentsline {subsection}{\numberline {2.4.3}Semiring}{12}
 \contentsline {section}{\numberline {2.5}Seed Selection Algorithm}{12}
 \contentsline {subsection}{\numberline {2.5.1}The Greedy Algorithm}{12}
 \contentsline {subsection}{\numberline {2.5.2}The Degree Algorithm}{12}
 \contentsline {subsection}{\numberline {2.5.3}Independent Algorithm}{13}
-\contentsline {subsection}{\numberline {2.5.4}Random Algorithm}{13}
+\contentsline {subsection}{\numberline {2.5.4}Random Algorithm}{14}
 \contentsline {section}{\numberline {2.6}High-Level Synthesis}{14}
 \contentsline {section}{\numberline {2.7}ZedBoard}{14}
-\contentsline {section}{\numberline {2.8}RMat}{14}
+\contentsline {section}{\numberline {2.8}RMat}{15}
 \contentsline {chapter}{\numberline {3}Related Work}{17}
 \contentsline {section}{\numberline {3.1}Information Diffusion}{17}
 \contentsline {section}{\numberline {3.2}High-Level Synthesis}{18}
 \contentsline {subsection}{\numberline {3.2.1}Applications using HLS}{19}
 \contentsline {section}{\numberline {3.3}Different optimization scheme}{20}
 \contentsline {chapter}{\numberline {4}Design and Implementation}{23}
-\contentsline {section}{\numberline {4.1}IP-core}{23}
-\contentsline {subsection}{\numberline {4.1.1}High Level Implementation}{23}
-\contentsline {subsection}{\numberline {4.1.2}Seed Selection}{25}
-\contentsline {section}{\numberline {4.2}Linear-Feedback Shift Register}{25}
-\contentsline {section}{\numberline {4.3}Design flow of HLS}{25}
+\contentsline {subsection}{\numberline {4.0.1}High Level Implementation}{23}
+\contentsline {subsection}{\numberline {4.0.2}Seed Selection}{24}
+\contentsline {section}{\numberline {4.1}IP-core}{24}
+\contentsline {section}{\numberline {4.2}Design flow of HLS}{25}
+\contentsline {section}{\numberline {4.3}Linear-Feedback Shift Register}{28}
 \contentsline {section}{\numberline {4.4}Network and graph generator}{28}
 \contentsline {section}{\numberline {4.5}How is it connected}{28}
-\contentsline {section}{\numberline {4.6}Xilinx SDK}{28}
-\contentsline {section}{\numberline {4.7}Optimization}{28}
+\contentsline {section}{\numberline {4.6}Xilinx SDK}{29}
+\contentsline {section}{\numberline {4.7}Optimization}{29}
 \contentsline {chapter}{\numberline {5}Result and Discussion}{31}
 \contentsline {section}{\numberline {5.1}Experimental Setup}{31}
 \contentsline {section}{\numberline {5.2}Results}{32}
-\contentsline {section}{\numberline {5.3}Performance}{32}
+\contentsline {section}{\numberline {5.3}Performance}{33}
 \contentsline {section}{\numberline {5.4}Discussion}{34}
 \contentsline {subsection}{\numberline {5.4.1}Results}{34}
-\contentsline {chapter}{\numberline {6}Future work}{39}
-\contentsline {chapter}{\numberline {7}Conclusion}{41}
+\contentsline {chapter}{\numberline {6}Future work}{37}
+\contentsline {chapter}{\numberline {7}Conclusion}{39}

@@ -7,13 +7,13 @@
 \contentsline {figure}{\numberline {2.5}{\ignorespaces How the adjacency matrix is flipped on the diagonal\relax }}{15}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Overview of out implementation\relax }}{24}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces 16-bit Linear-Feedback Shift Register\relax }}{26}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Diagram of HLS wokflow\relax }}{27}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Overview of out implementation\relax }}{25}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagram of HLS wokflow\relax }}{27}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces 16-bit Linear-Feedback Shift Register\relax }}{28}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Our IP-core and how it is connected.\relax }}{30}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces The R-mat model \cite {Rmat2004}\relax }}{32}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Synthesis report for IP-core with buffersize 1024\relax }}{35}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Synthesis report for IP-core with buffer size 16\relax }}{36}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Synthesis report for IP-core with buffer size 16\relax }}{35}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

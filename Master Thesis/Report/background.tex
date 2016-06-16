@@ -111,7 +111,7 @@ Networks can be represented as \textit{sparse adjacency matrices} \cite{AlgoToMa
 \subsection{Sparse Matrix}
 A sparse matrix is a matrix containing few nonzero entries. A social graph with few edges would often be represented as a sparse matrix. Since sparse matrices only have few non-zero elements, by storing only the non-zero elements, we can have savings in memory. 
 
-\begin{figure}
+\begin{figure}[!ht]
     \begin{subfigure}{0.3\textwidth}
     \includegraphics[width=0.8\textwidth]{Figures/AdjacencyMatrix}
     \caption{The adjacency matrix}
@@ -129,7 +129,9 @@ A sparse matrix is a matrix containing few nonzero entries. A social graph with 
 \subsection{Breadth First Search as Matrix Multiplication.} \label{BFS as Matrix}
 From  \cite{AlgoToMath}, we can see that BFS can be recast as algebraic operations. BFS can be performed by applying matrix-vector multiplication over Boolean semirings \cite{HybridBFS2015}. The graph is represented as an adjacency matrix A, then for the root vertex, a vector x(root)=1 is multiplied with the matrix A. $A \times x_0 = y_0$. $y_0$ is the result of the first matrix-vector multiplication and in the next iteration, $x_1 = y_0$. We can see from the Figure\ref{fig:bfsMatrix}
 
-\begin{figure}
+By performing an AND operation between each element in a row in the matrix and the corresponding element in the vector, then applies the OR operation between each result from the AND operation, we can find the result, which is the row number in the. This will be further explained in Chapter \ref{methode}. 
+
+\begin{figure}[!ht]
     \includegraphics[width=0.7\textwidth]{Figures/BFS_algo}
     \caption{BFS on Boolean semiring}
     \label{fig:bfsMatrix}
